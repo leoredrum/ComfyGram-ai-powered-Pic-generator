@@ -1,0 +1,20 @@
+{
+  "_comment": "dual_transfer 轨道注册表。pose 已上线；outfit 等待 Cozy Human Parser 落地后再启用，禁止用 auto_mask.py 顶替。",
+  "tracks": {
+    "pose": {
+      "status": "active",
+      "workflow_id": "dual_transfer_pose",
+      "display_cn": "🧍 A角色 + B动作",
+      "task_prefix": "dt-pose",
+      "output_prefix": "dual_transfer_pose"
+    },
+    "outfit": {
+      "status": "wip",
+      "workflow_id": null,
+      "display_cn": "👗 A角色 + B服装 (🚧 开发中)",
+      "task_prefix": "dt-outfit",
+      "output_prefix": "dual_transfer_outfit",
+      "wip_message": "服装迁移轨道开发中：等待 Cozy Human Parser 节点落地后启用。"
+    }
+  }
+}

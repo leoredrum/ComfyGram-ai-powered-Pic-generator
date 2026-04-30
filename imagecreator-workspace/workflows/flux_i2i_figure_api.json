@@ -1,0 +1,136 @@
+{
+  "_comment": "Anime figure/手办 style: XLabs IP-Adapter(0.75) + ControlNet Canny(0.35). Converts character image into Q-version blind box figure style. Requires clip_vision_l.safetensors.",
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "flux1-dev.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "DualCLIPLoader",
+    "inputs": {
+      "clip_name1": "t5xxl_fp8_e4m3fn.safetensors",
+      "clip_name2": "clip_l.safetensors",
+      "type": "flux"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "ae.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "LoadFluxIPAdapter",
+    "inputs": {
+      "ipadatper": "ip_adapter.safetensors",
+      "clip_vision": "clip_vision_l.safetensors",
+      "provider": "CPU"
+    }
+  },
+  "5": {
+    "class_type": "LoadFluxControlNet",
+    "inputs": {
+      "model_name": "flux-dev",
+      "controlnet_path": "flux-canny-controlnet-v3.safetensors"
+    }
+  },
+  "6": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "input.jpg"
+    }
+  },
+  "7": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": ["6", 0],
+      "upscale_method": "lanczos",
+      "width": 1024,
+      "height": 1024,
+      "crop": "center"
+    }
+  },
+  "8": {
+    "class_type": "ApplyFluxIPAdapter",
+    "inputs": {
+      "model": ["1", 0],
+      "ip_adapter_flux": ["4", 0],
+      "image": ["7", 0],
+      "ip_scale": 0.75
+    }
+  },
+  "9": {
+    "class_type": "Canny",
+    "inputs": {
+      "image": ["7", 0],
+      "low_threshold": 0.1,
+      "high_threshold": 0.2
+    }
+  },
+  "10": {
+    "class_type": "ApplyFluxControlNet",
+    "inputs": {
+      "controlnet": ["5", 0],
+      "image": ["9", 0],
+      "strength": 0.35
+    }
+  },
+  "11": {
+    "class_type": "CLIPTextEncodeFlux",
+    "inputs": {
+      "clip": ["2", 0],
+      "clip_l": "Q-version anime figure, chibi character, blind box toy, collectible figurine, smooth plastic surface, cute face, same character, pastel colors, studio white background, 3D render style, soft lighting, masterpiece, best quality, highly detailed",
+      "t5xxl": "Q-version anime figure, chibi character, blind box toy, collectible figurine, smooth plastic surface, cute face, same character, pastel colors, studio white background, 3D render style, soft lighting, masterpiece, best quality, highly detailed",
+      "guidance": 4.0
+    }
+  },
+  "12": {
+    "class_type": "CLIPTextEncodeFlux",
+    "inputs": {
+      "clip": ["2", 0],
+      "clip_l": "NEGATIVE: realistic photo, photograph, 2D flat illustration, different character, bad anatomy, deformed, blurry, low quality, watermark, ugly",
+      "t5xxl": "NEGATIVE: realistic photo, photograph, 2D flat illustration, different character, bad anatomy, deformed, blurry, low quality, watermark, ugly",
+      "guidance": 4.0
+    }
+  },
+  "13": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "batch_size": 1
+    }
+  },
+  "14": {
+    "class_type": "XlabsSampler",
+    "inputs": {
+      "model": ["8", 0],
+      "conditioning": ["11", 0],
+      "neg_conditioning": ["12", 0],
+      "noise_seed": 42,
+      "steps": 30,
+      "timestep_to_start_cfg": 1,
+      "true_gs": 4.0,
+      "image_to_image_strength": 0.0,
+      "denoise_strength": 1.0,
+      "latent_image": ["13", 0],
+      "controlnet_condition": ["10", 0]
+    }
+  },
+  "15": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": ["14", 0],
+      "vae": ["3", 0]
+    }
+  },
+  "16": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": ["15", 0],
+      "filename_prefix": "flux_figure"
+    }
+  }
+}

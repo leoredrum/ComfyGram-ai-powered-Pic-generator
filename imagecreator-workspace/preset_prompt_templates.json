@@ -1,0 +1,238 @@
+[
+  {
+    "id": "n_pvc_refined",
+    "category": "normal",
+    "title": "精致手办感",
+    "families": [
+      "pvc",
+      "2d",
+      "3d"
+    ],
+    "positive": "masterpiece, best quality, extremely detailed CG unity 8k wallpaper, pvc figure, glossy surface, plastic texture, studio lighting, product photography, detailed sculpt, sharp focus, gradient background, miniature scale, high quality rendering, professional figure photo, reflective base, clean edges, smooth shading, vibrant color, toy photography, bokeh background, display stand, collector edition, exquisite detail, absurdres, highres",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, rough texture, flat lighting, dull colors, sketch, draft, unfinished, out of frame, extra limbs, distorted"
+  },
+  {
+    "id": "n_soft_anime",
+    "category": "normal",
+    "title": "柔光二次元",
+    "families": [
+      "pvc",
+      "2d"
+    ],
+    "positive": "masterpiece, best quality, anime style, soft lighting, pastel colors, delicate shading, cel shading, illustration, beautiful detailed eyes, flowing hair, gentle expression, ethereal glow, light particles, watercolor texture, smooth lineart, dreamy atmosphere, sakura petals, lens flare, rim lighting, luminous skin, fine details, highres, absurdres, extremely detailed CG",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, realistic, photographic, 3d render, harsh shadows, noise, grainy, pixelated, rough lines, dark mood, gloomy, muddy colors"
+  },
+  {
+    "id": "n_cinematic_real",
+    "category": "normal",
+    "title": "电影感写实",
+    "families": [
+      "3d",
+      "pvc"
+    ],
+    "positive": "masterpiece, best quality, cinematic lighting, photorealistic, film grain, dramatic shadows, volumetric lighting, depth of field, bokeh, anamorphic lens, color grading, teal and orange, golden hour, professional photography, DSLR quality, sharp focus, natural skin texture, detailed pores, subsurface scattering, ray tracing, global illumination, atmospheric haze, absurdres, highres",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, anime, cartoon, drawing, painting, flat lighting, oversaturated, plastic skin, airbrushed, uncanny valley"
+  },
+  {
+    "id": "n_skin_detail",
+    "category": "normal",
+    "title": "高质感肌肤",
+    "families": [
+      "3d",
+      "2d",
+      "pvc"
+    ],
+    "positive": "masterpiece, best quality, detailed skin texture, natural skin pores, subsurface scattering, realistic skin tone, healthy glow, soft skin, smooth complexion, natural blush, skin highlights, photorealistic skin, studio beauty lighting, beauty photography, closeup detail, HD skin texture, moisture on skin, warm undertone, dewy finish, professional retouching, absurdres, highres",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, plastic skin, flat shading, airbrushed, wax figure, mannequin, oversmoothed, doll-like, uncanny valley, harsh lighting, unnatural color"
+  },
+  {
+    "id": "n_manga_impasto",
+    "category": "normal",
+    "title": "漫画厚涂风",
+    "families": [
+      "2d",
+      "pvc"
+    ],
+    "positive": "masterpiece, best quality, thick paint strokes, impasto style, oil painting texture, bold colors, strong contrast, dramatic lighting, visible brushwork, rich texture, expressive style, manga illustration, comic book art, dynamic composition, saturated palette, layered paint, artistic rendering, digital painting, concept art style, painterly effect, game_cg, absurdres, highres",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, photorealistic, flat colors, watercolor, sketch, lineart only, thin lines, washed out, vector art, clip art"
+  },
+  {
+    "id": "n_dark_gothic",
+    "category": "normal",
+    "title": "暗黑哥特风",
+    "families": [
+      "2d",
+      "3d",
+      "pvc"
+    ],
+    "positive": "masterpiece, best quality, gothic atmosphere, dark fantasy, dramatic chiaroscuro, deep shadows, candlelight, moonlight, dark color palette, ornate details, baroque elements, dark lace, velvet texture, mysterious aura, raven black, blood red accents, cathedral background, stained glass, fog, dark roses, silver jewelry, Victorian aesthetic, gothic_lolita, absurdres",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, bright colors, cheerful, pastel, sunny, chibi, flat lighting, happy mood, rainbow, neon, minimalist, plain"
+  },
+  {
+    "id": "n_dreamy_bokeh",
+    "category": "normal",
+    "title": "梦幻柔焦",
+    "families": [
+      "2d",
+      "3d",
+      "pvc"
+    ],
+    "positive": "masterpiece, best quality, dreamy atmosphere, soft focus, gaussian blur background, light leaks, lens flare, fairy lights, glowing particles, pastel tones, ethereal mood, shallow depth of field, warm golden light, backlit, halo effect, translucent fabric, floating petals, sparkle, iridescent highlights, morning mist, diffused lighting, romantic mood, absurdres, highres",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, sharp everywhere, harsh lighting, dark mood, gloomy, high contrast, gritty, noisy, cold colors, industrial, stark"
+  },
+  {
+    "id": "n_japanese_clear",
+    "category": "normal",
+    "title": "日系透明感",
+    "families": [
+      "2d",
+      "3d",
+      "pvc"
+    ],
+    "positive": "masterpiece, best quality, Japanese photography style, natural light, soft shadow, clean composition, minimalist background, white space, transparent fabric, clear skin, bright eyes, hair highlights, sunlight through window, airy atmosphere, fresh mood, light breeze, subtle color harmony, high key lighting, gentle contrast, clean aesthetic, refined detail, magazine quality, absurdres",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, dark, gloomy, harsh shadow, cluttered background, heavy makeup, gaudy, oversaturated, neon, gothic, grunge, dirty"
+  },
+  {
+    "id": "n_cyber_neon",
+    "category": "normal",
+    "title": "赛博霓虹",
+    "families": [
+      "2d",
+      "3d",
+      "pvc"
+    ],
+    "positive": "masterpiece, best quality, cyberpunk aesthetic, neon lights, holographic effects, futuristic cityscape, rain reflections, wet streets, LED glow, chrome accents, digital HUD overlay, purple and cyan color scheme, synthwave, tech noir, laser lights, glitch art elements, circuit patterns, augmented reality, night scene, electric atmosphere, science_fiction, absurdres, highres",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, natural setting, daylight, pastoral, vintage, sunny, cheerful, fantasy medieval, rustic, earth tones, muted colors"
+  },
+  {
+    "id": "n_retro_film",
+    "category": "normal",
+    "title": "复古胶片",
+    "families": [
+      "2d",
+      "3d",
+      "pvc"
+    ],
+    "positive": "masterpiece, best quality, retro film photography, analog grain, 35mm film, Kodak Portra colors, warm color cast, light leak, vignette, vintage aesthetic, nostalgic mood, faded highlights, soft contrast, matte finish, old photograph feel, 80s style, film border, slightly desaturated, amber tones, tungsten lighting, classic composition, timeless beauty, absurdres",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, digital sharp, HDR, oversaturated, modern editing, neon, futuristic, high contrast, cold tones, blue cast, fluorescent lighting"
+  },
+  {
+    "id": "r_sultry_boudoir",
+    "category": "r18",
+    "title": "暗调私房",
+    "families": [
+      "3d",
+      "2d",
+      "pvc"
+    ],
+    "positive": "masterpiece, best quality, nsfw, boudoir photography, dim ambient lighting, warm shadows, intimate atmosphere, silk sheets, sexy lingerie, lace, sultry expression, seductive smile, bedroom setting, soft candlelight, skin highlights, sensual pose, arched_back, parted lips, detailed lingerie texture, satin fabric, garter belt, black thighhighs, elegant curves, naughty_face, cleavage, bare_shoulders, off_shoulder, large breasts, navel, absurdres",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, bright lighting, outdoor, chibi, flat colors, censored, mosaic, childish, sketch"
+  },
+  {
+    "id": "r_wet_shower",
+    "category": "r18",
+    "title": "湿身诱惑",
+    "families": [
+      "3d",
+      "2d",
+      "pvc"
+    ],
+    "positive": "masterpiece, best quality, nsfw, wet skin, water droplets, shower scene, steam, glistening body, translucent wet fabric, see-through white shirt, dripping water, nipples, breasts, naked towel wrap, pussy_juice, dewy skin, reflective wet surface, water streaming down body, wet hair, humid atmosphere, bathing, cameltoe, body contour visible, soaked hair, large breasts, navel, absurdres",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, dry, desert, censored, mosaic, flat lighting, matte skin, thick clothing, sketch"
+  },
+  {
+    "id": "r_bondage_elegant",
+    "category": "r18",
+    "title": "优雅束缚",
+    "families": [
+      "2d",
+      "3d",
+      "pvc"
+    ],
+    "positive": "masterpiece, best quality, nsfw, shibari, bondage, red rope, intricate knots, bound_wrists, bound_arms, crotch_rope, suspension, spreader_bar, artistic bondage, rope pattern on skin, leather collar, leash, blindfold, ballgag, chain accessories, nipple_piercing, bdsm, dark velvet background, dramatic spotlight, endured_face, ahegao, breasts, nipples, nude, absurdres",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, censored, mosaic, bright cheerful, casual, childish, simple rope, sloppy tie"
+  },
+  {
+    "id": "r_office_tease",
+    "category": "r18",
+    "title": "OL制服诱惑",
+    "families": [
+      "3d",
+      "2d",
+      "pvc"
+    ],
+    "positive": "masterpiece, best quality, nsfw, office lady, business_suit, pencil skirt, unbuttoned blouse, cleavage, crossed_legs, high heels, glasses, desk setting, corporate office, black thighhighs, garter straps, garter belt, skirt lift, nylon stockings, shirt lift, thigh gap, naughty_face, no_panties, panties, bra, breast_grab, spread legs, large breasts, mature female, absurdres",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, censored, mosaic, casual wear, outdoor, sportswear, armor, childish, flat lighting"
+  },
+  {
+    "id": "r_onsen_steam",
+    "category": "r18",
+    "title": "温泉蒸汽",
+    "families": [
+      "3d",
+      "2d",
+      "pvc"
+    ],
+    "positive": "masterpiece, best quality, nsfw, hot spring bath, onsen, rising steam, natural rock pool, milky water, partially submerged, wet towel, flushed skin, bathing, naked, breasts, nipples, light blush, relaxed expression, bamboo fence, lantern light, night, full_moon, moon reflection, water surface ripples, large breasts, wet hair, navel, bare_shoulders, traditional Japanese inn, absurdres",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, censored, mosaic, swimming pool, modern bathroom, cold colors, fully clothed, sketch"
+  },
+  {
+    "id": "r_maid_service",
+    "category": "r18",
+    "title": "女仆奉仕",
+    "families": [
+      "2d",
+      "pvc",
+      "3d"
+    ],
+    "positive": "masterpiece, best quality, nsfw, maid, maid_headdress, frilly apron, mini skirt, thighhighs, lace, bending over, serving pose, cleavage, short skirt, exposed thighs, ribbon_choker, wrist_cuffs, petticoat, no_panties, breasts out, nipples, breast_grab, skirt lift, naughty_face, cute face, Victorian mansion interior, ornate furniture, obedient gaze, seductive smile, absurdres",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, censored, mosaic, modern clothing, outdoor, armor, plain background, masculine, sketch"
+  },
+  {
+    "id": "r_school_after",
+    "category": "r18",
+    "title": "放课后秘密",
+    "families": [
+      "2d",
+      "pvc"
+    ],
+    "positive": "masterpiece, best quality, nsfw, school uniform, serafuku, sailor_collar, pleated_skirt, loose necktie, unbuttoned shirt, classroom, dusk, sunset through window, desk sitting, crossed_legs, thigh visible, loose socks, skirt lift, shirt lift, panties, bra, no_panties, blush, shy, embarrassed, hair ribbon, bag on desk, school rooftop, bishoujo, beautiful detailed eyes, absurdres",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, censored, mosaic, adult clothing, formal wear, dark gothic, horror, neon, futuristic, sketch"
+  },
+  {
+    "id": "r_nurse_checkup",
+    "category": "r18",
+    "title": "护士诊疗",
+    "families": [
+      "3d",
+      "2d",
+      "pvc"
+    ],
+    "positive": "masterpiece, best quality, nsfw, nurse, nurse cap, white thighhighs, short dress, stethoscope, hospital room, examination bed, latex gloves, tight uniform, garter straps, bending forward, caring expression, medical instruments, white coat open, high heels, no bra, breasts, nipples, cleavage, skirt lift, naughty_face, seductive smile, curtain partition, sterile white room, absurdres",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, censored, mosaic, casual clothing, outdoor, fantasy armor, gothic, medieval, neon, sketch"
+  },
+  {
+    "id": "r_pool_bikini",
+    "category": "r18",
+    "title": "泳池派对",
+    "families": [
+      "3d",
+      "2d",
+      "pvc"
+    ],
+    "positive": "masterpiece, best quality, nsfw, swimming pool, sling bikini, side-tie_bikini, bikini_top, wet skin, suntan lines, poolside, water splashing, sun, oiled skin, bikini top only, transparent wet fabric, cameltoe, breasts, navel, large breasts, nipples visible through fabric, thigh gap, spread legs, armpits, blue water, palm trees, beach chair, sunglasses, tanned skin, absurdres",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, censored, mosaic, winter, snow, heavy clothing, indoor dark room, gothic, armor, formal wear, sketch"
+  },
+  {
+    "id": "r_fantasy_succubus",
+    "category": "r18",
+    "title": "魅魔幻想",
+    "families": [
+      "2d",
+      "pvc",
+      "3d"
+    ],
+    "positive": "masterpiece, best quality, nsfw, devil, demon horns, bat wings, dark magic aura, glowing red eyes, black leather corset, thigh high boots, pentagram, seductive smile, long sharp nails, choker, exposed midriff, dark flame effects, purple magic circles, gothic castle interior, crescent moon, naughty_face, breasts, nipples, cleavage, nude, dark_persona, heterochromia, absurdres",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, censored, mosaic, angelic, holy, bright sunny, casual modern clothing, chibi, cheerful, pastel colors, sketch"
+  }
+]

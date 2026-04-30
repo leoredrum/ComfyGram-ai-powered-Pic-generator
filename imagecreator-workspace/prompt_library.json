@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "environment",
+      "title": "🌄 环境",
+      "items": [
+        {"id": "env_outdoor_sun", "label": "户外阳光", "positive": "outdoor, sunlight, natural lighting, blue sky", "negative": ""},
+        {"id": "env_indoor_studio", "label": "室内棚拍", "positive": "indoor, studio lighting, softbox, professional photography", "negative": ""},
+        {"id": "env_night_city", "label": "夜景城市", "positive": "night city, neon lights, urban, cyberpunk atmosphere", "negative": ""},
+        {"id": "env_beach", "label": "海滩", "positive": "beach, ocean, sand, waves, tropical, sunset", "negative": ""},
+        {"id": "env_forest", "label": "森林", "positive": "forest, trees, lush greenery, dappled sunlight, nature", "negative": ""},
+        {"id": "env_bedroom", "label": "卧室", "positive": "bedroom, bed, pillows, warm lighting, intimate", "negative": ""},
+        {"id": "env_bathroom", "label": "浴室", "positive": "bathroom, bathtub, wet, steam, tiles, mirror", "negative": ""},
+        {"id": "env_pool", "label": "泳池", "positive": "swimming pool, poolside, wet skin, water reflection, summer", "negative": ""},
+        {"id": "env_onsen", "label": "温泉", "positive": "hot spring, onsen, steam, rocks, traditional japanese, outdoor bath", "negative": ""},
+        {"id": "env_gym", "label": "健身房", "positive": "gym, fitness, workout equipment, mirror, athletic", "negative": ""},
+        {"id": "env_classroom", "label": "教室", "positive": "classroom, school desk, blackboard, window light", "negative": ""},
+        {"id": "env_office", "label": "办公室", "positive": "office, desk, computer, professional setting, modern interior", "negative": ""}
+      ]
+    },
+    {
+      "id": "style",
+      "title": "🎨 风格",
+      "items": [
+        {"id": "sty_cinematic", "label": "电影感", "positive": "cinematic lighting, dramatic shadows, film grain, movie still", "negative": ""},
+        {"id": "sty_portrait", "label": "写真", "positive": "portrait photography, bokeh, shallow depth of field, soft focus background", "negative": ""},
+        {"id": "sty_retro90", "label": "90年代复古", "positive": "90s aesthetic, retro, vintage, film photography, warm tones", "negative": ""},
+        {"id": "sty_polaroid", "label": "拍立得", "positive": "polaroid photo, instant film, white border, nostalgic, slightly overexposed", "negative": ""},
+        {"id": "sty_watercolor", "label": "水彩", "positive": "watercolor painting, soft edges, pastel colors, artistic", "negative": ""},
+        {"id": "sty_oilpaint", "label": "油画", "positive": "oil painting, thick brushstrokes, canvas texture, classical art", "negative": ""},
+        {"id": "sty_anime", "label": "动漫风", "positive": "anime style, cel shading, vibrant colors, clean lines", "negative": ""},
+        {"id": "sty_cyberpunk", "label": "赛博朋克", "positive": "cyberpunk, neon glow, futuristic, holographic, chrome", "negative": ""},
+        {"id": "sty_dark_moody", "label": "暗黑情绪", "positive": "dark moody, low key lighting, shadows, dramatic, chiaroscuro", "negative": ""},
+        {"id": "sty_pastel", "label": "粉彩柔和", "positive": "pastel colors, soft lighting, dreamy, gentle, ethereal", "negative": ""}
+      ]
+    },
+    {
+      "id": "pose",
+      "title": "💃 动作",
+      "items": [
+        {"id": "pose_standing", "label": "站姿", "positive": "standing, full body, elegant pose", "negative": ""},
+        {"id": "pose_sitting", "label": "坐姿", "positive": "sitting, relaxed pose, crossed legs", "negative": ""},
+        {"id": "pose_lying", "label": "躺姿", "positive": "lying down, reclining, relaxed", "negative": ""},
+        {"id": "pose_walking", "label": "行走", "positive": "walking, dynamic pose, in motion, natural stride", "negative": ""},
+        {"id": "pose_leaning", "label": "倚靠", "positive": "leaning against wall, casual pose, one hand on hip", "negative": ""},
+        {"id": "pose_kneeling", "label": "跪姿", "positive": "kneeling, on knees, looking up", "negative": ""},
+        {"id": "pose_back_view", "label": "背影", "positive": "from behind, back view, looking over shoulder", "negative": ""},
+        {"id": "pose_closeup", "label": "面部特写", "positive": "close-up face, detailed eyes, portrait crop", "negative": ""},
+        {"id": "pose_dynamic", "label": "动感", "positive": "dynamic pose, action, wind blown hair, motion blur", "negative": ""},
+        {"id": "pose_stretching", "label": "伸展", "positive": "stretching, arms raised, arching back, flexible", "negative": ""}
+      ]
+    },
+    {
+      "id": "outfit",
+      "title": "👗 服装",
+      "items": [
+        {"id": "out_school", "label": "JK制服", "positive": "school uniform, JK uniform, pleated skirt, sailor collar, knee socks", "negative": ""},
+        {"id": "out_maid", "label": "女仆装", "positive": "maid outfit, maid headdress, apron, frills, black and white", "negative": ""},
+        {"id": "out_bikini", "label": "比基尼", "positive": "bikini, swimsuit, two-piece, beach wear", "negative": ""},
+        {"id": "out_dress", "label": "连衣裙", "positive": "dress, elegant, flowing fabric, feminine", "negative": ""},
+        {"id": "out_kimono", "label": "和服", "positive": "kimono, traditional japanese clothing, obi sash, floral pattern", "negative": ""},
+        {"id": "out_cheongsam", "label": "旗袍", "positive": "cheongsam, qipao, chinese dress, high slit, elegant", "negative": ""},
+        {"id": "out_sportswear", "label": "运动装", "positive": "sportswear, sports bra, yoga pants, athletic, fit", "negative": ""},
+        {"id": "out_suit", "label": "西装", "positive": "business suit, formal wear, blazer, professional", "negative": ""},
+        {"id": "out_lingerie", "label": "内衣", "positive": "lingerie, lace, sheer, delicate, feminine", "negative": ""},
+        {"id": "out_sweater", "label": "毛衣", "positive": "oversized sweater, knit, cozy, off-shoulder, bare legs", "negative": ""},
+        {"id": "out_nurse", "label": "护士装", "positive": "nurse outfit, nurse cap, white uniform, medical", "negative": ""},
+        {"id": "out_bunny", "label": "兔女郎", "positive": "bunny girl, bunny ears, leotard, fishnet stockings, bow tie", "negative": ""}
+      ]
+    },
+    {
+      "id": "r18",
+      "title": "🔞 R18",
+      "items": [
+        {"id": "r18_nude", "label": "裸体", "positive": "nude, naked, bare skin, exposed body", "negative": ""},
+        {"id": "r18_topless", "label": "上身裸露", "positive": "topless, bare breasts, exposed chest", "negative": ""},
+        {"id": "r18_see_through", "label": "透视", "positive": "see-through, transparent clothing, sheer fabric, visible skin underneath", "negative": ""},
+        {"id": "r18_wet", "label": "湿身", "positive": "wet body, wet hair, water droplets on skin, soaked clothing, glistening", "negative": ""},
+        {"id": "r18_bondage", "label": "捆绑", "positive": "bondage, rope, tied up, restrained, shibari", "negative": ""},
+        {"id": "r18_ahegao", "label": "阿黑颜", "positive": "ahegao, tongue out, rolling eyes, drooling, pleasure face", "negative": ""},
+        {"id": "r18_tentacle", "label": "触手", "positive": "tentacles, tentacle grab, wrapped, monster, fantasy", "negative": ""},
+        {"id": "r18_bdsm", "label": "BDSM", "positive": "bdsm, leather, collar, chains, dominatrix, submissive", "negative": ""},
+        {"id": "r18_spread", "label": "展开", "positive": "spread legs, open pose, presenting, exposed", "negative": ""},
+        {"id": "r18_cowgirl", "label": "骑乘", "positive": "cowgirl position, straddling, riding, on top", "negative": ""},
+        {"id": "r18_doggy", "label": "后入", "positive": "doggystyle, from behind, on all fours, prone", "negative": ""},
+        {"id": "r18_oral", "label": "口交", "positive": "fellatio, oral, blowjob, licking, sucking", "negative": ""},
+        {"id": "r18_breast_grab", "label": "揉胸", "positive": "breast grab, groping, squeezing breasts, hands on chest", "negative": ""},
+        {"id": "r18_large_breasts", "label": "巨乳", "positive": "large breasts, huge breasts, big breasts, cleavage, voluptuous", "negative": ""},
+        {"id": "r18_sweat", "label": "流汗", "positive": "sweaty, sweat drops, glistening skin, flushed, body heat", "negative": ""},
+        {"id": "r18_cum", "label": "射精", "positive": "cum, semen, facial, creampie, body fluid", "negative": ""}
+      ]
+    }
+  ]
+}

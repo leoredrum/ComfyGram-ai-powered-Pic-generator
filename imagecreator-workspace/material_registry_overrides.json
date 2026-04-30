@@ -1,0 +1,14 @@
+{
+  "models": {
+    "2d/One obsession Branch（Mature.NoobAi.Vpred）": {
+      "display_name_cn": "痴漫风格",
+      "default_prompt": "",
+      "recommended_params": {
+        "steps": 30,
+        "sampler": "Euler a",
+        "clip_skip": 2
+      }
+    }
+  },
+  "loras": {}
+}

@@ -1,0 +1,151 @@
+{
+  "_comment": "双图迁移 — A角色+B姿势+B衣服: IP-Adapter(A face, ip_scale=0.6) + Depth ControlNet(B pose, strength=0.5) + i2i from B(i2i_strength=0.7). 无 LoRA.",
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "flux1-dev.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "DualCLIPLoader",
+    "inputs": {
+      "clip_name1": "t5xxl_fp8_e4m3fn.safetensors",
+      "clip_name2": "clip_l.safetensors",
+      "type": "flux"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "ae.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "LoadFluxIPAdapter",
+    "inputs": {
+      "ipadatper": "ip_adapter.safetensors",
+      "clip_vision": "clip_vision_l.safetensors",
+      "provider": "CPU"
+    }
+  },
+  "5": {
+    "class_type": "LoadFluxControlNet",
+    "inputs": {
+      "model_name": "flux-dev",
+      "controlnet_path": "flux-depth-controlnet-v3.safetensors"
+    }
+  },
+  "6": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "FACE_IMAGE_PLACEHOLDER"
+    }
+  },
+  "7": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": ["6", 0],
+      "upscale_method": "lanczos",
+      "width": 1024,
+      "height": 1024,
+      "crop": "center"
+    }
+  },
+  "20": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "BODY_IMAGE_PLACEHOLDER"
+    }
+  },
+  "21": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": ["20", 0],
+      "upscale_method": "lanczos",
+      "width": 1024,
+      "height": 1024,
+      "crop": "center"
+    }
+  },
+  "8": {
+    "class_type": "ApplyFluxIPAdapter",
+    "inputs": {
+      "model": ["1", 0],
+      "ip_adapter_flux": ["4", 0],
+      "image": ["7", 0],
+      "ip_scale": 0.75
+    }
+  },
+  "9": {
+    "class_type": "DepthAnythingV2Preprocessor",
+    "inputs": {
+      "image": ["21", 0],
+      "ckpt_name": "depth_anything_v2_vitl.pth",
+      "resolution": 1024
+    }
+  },
+  "10": {
+    "class_type": "ApplyFluxControlNet",
+    "inputs": {
+      "controlnet": ["5", 0],
+      "image": ["9", 0],
+      "strength": 0.5
+    }
+  },
+  "18": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": ["21", 0],
+      "vae": ["3", 0]
+    }
+  },
+  "11": {
+    "class_type": "CLIPTextEncodeFlux",
+    "inputs": {
+      "clip": ["2", 0],
+      "clip_l": "same character, same face, preserve identity, same outfit, same clothing, high quality, detailed",
+      "t5xxl": "same character, same face, preserve identity, same outfit, same clothing, high quality, detailed",
+      "guidance": 3.5
+    }
+  },
+  "12": {
+    "class_type": "CLIPTextEncodeFlux",
+    "inputs": {
+      "clip": ["2", 0],
+      "clip_l": "NEGATIVE: blurry, bad anatomy, deformed, watermark, low quality, ugly",
+      "t5xxl": "NEGATIVE: blurry, bad anatomy, deformed, watermark, low quality, ugly",
+      "guidance": 3.5
+    }
+  },
+  "14": {
+    "class_type": "XlabsSampler",
+    "inputs": {
+      "model": ["8", 0],
+      "conditioning": ["11", 0],
+      "neg_conditioning": ["12", 0],
+      "noise_seed": 42,
+      "steps": 28,
+      "timestep_to_start_cfg": 1,
+      "true_gs": 3.5,
+      "image_to_image_strength": 0.55,
+      "denoise_strength": 1.0,
+      "latent_image": ["18", 0],
+      "controlnet_condition": ["10", 0]
+    }
+  },
+  "15": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": ["14", 0],
+      "vae": ["3", 0]
+    }
+  },
+  "16": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": ["15", 0],
+      "filename_prefix": "flux_transfer_pose_outfit"
+    }
+  }
+}

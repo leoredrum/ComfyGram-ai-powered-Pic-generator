@@ -1,0 +1,4341 @@
+{
+  "max_selection": 30,
+  "categories": [
+    {
+      "id": "common",
+      "cn_label": "常用",
+      "tags": [
+        {
+          "en": "masterpiece",
+          "cn": "杰作"
+        },
+        {
+          "en": "best quality",
+          "cn": "最高画质"
+        },
+        {
+          "en": "official art",
+          "cn": "官方艺术"
+        },
+        {
+          "en": "extremely detailed CG unity 8k wallpaper",
+          "cn": "8K超精细CG壁纸"
+        },
+        {
+          "en": "wedding dress:china dress:0.3",
+          "cn": "婚纱·旗袍(0.3)"
+        },
+        {
+          "en": "arms behind head",
+          "cn": "双手抱头后"
+        },
+        {
+          "en": "arms up",
+          "cn": "举起双臂"
+        },
+        {
+          "en": "armpits",
+          "cn": "腋下"
+        },
+        {
+          "en": "tiamat {fate}",
+          "cn": "蒂亚马特(Fate)"
+        },
+        {
+          "en": "surrounded",
+          "cn": "被包围"
+        },
+        {
+          "en": "multiple others",
+          "cn": "多人围观"
+        },
+        {
+          "en": "exhibitionism",
+          "cn": "露出癖"
+        },
+        {
+          "en": "audience",
+          "cn": "观众"
+        },
+        {
+          "en": "background characters",
+          "cn": "背景人物"
+        },
+        {
+          "en": "crowd",
+          "cn": "人群"
+        },
+        {
+          "en": "public humiliation",
+          "cn": "公开羞辱"
+        },
+        {
+          "en": "partially unbuttoned",
+          "cn": "半解扣"
+        },
+        {
+          "en": "show foot",
+          "cn": "展示脚"
+        },
+        {
+          "en": "pubic tattoo on underbelly",
+          "cn": "下腹耻骨纹身"
+        },
+        {
+          "en": "spread pussy",
+          "cn": "张开阴部"
+        },
+        {
+          "en": "ass_visible_through_thighs",
+          "cn": "大腿间见臀"
+        }
+      ]
+    },
+    {
+      "id": "scene",
+      "cn_label": "环境",
+      "tags": [
+        {
+          "en": "day",
+          "cn": "白天"
+        },
+        {
+          "en": "dusk",
+          "cn": "黄昏"
+        },
+        {
+          "en": "night",
+          "cn": "夜晚"
+        },
+        {
+          "en": "in spring",
+          "cn": "春季"
+        },
+        {
+          "en": "in summer",
+          "cn": "夏季"
+        },
+        {
+          "en": "in winter",
+          "cn": "冬季"
+        },
+        {
+          "en": "in autumn",
+          "cn": "秋季"
+        },
+        {
+          "en": "sun",
+          "cn": "太阳"
+        },
+        {
+          "en": "sunset",
+          "cn": "日落"
+        },
+        {
+          "en": "moon",
+          "cn": "月亮"
+        },
+        {
+          "en": "full_moon",
+          "cn": "满月"
+        },
+        {
+          "en": "stars",
+          "cn": "星空"
+        },
+        {
+          "en": "cloudy",
+          "cn": "多云"
+        },
+        {
+          "en": "in the rain",
+          "cn": "雨中"
+        },
+        {
+          "en": "rain",
+          "cn": "雨"
+        },
+        {
+          "en": "rainy days",
+          "cn": "雨天"
+        },
+        {
+          "en": "sky",
+          "cn": "天空"
+        },
+        {
+          "en": "sea",
+          "cn": "海"
+        },
+        {
+          "en": "mountain",
+          "cn": "山"
+        },
+        {
+          "en": "on a hill",
+          "cn": "山丘上"
+        },
+        {
+          "en": "the top of the hill",
+          "cn": "山顶"
+        },
+        {
+          "en": "in a meadow",
+          "cn": "草地"
+        },
+        {
+          "en": "plateau",
+          "cn": "高原"
+        },
+        {
+          "en": "on a desert",
+          "cn": "沙漠"
+        },
+        {
+          "en": "in hawaii",
+          "cn": "夏威夷"
+        },
+        {
+          "en": "landscape",
+          "cn": "风景"
+        },
+        {
+          "en": "cityscape",
+          "cn": "城市景观"
+        },
+        {
+          "en": "beautiful detailed sky",
+          "cn": "精致天空"
+        },
+        {
+          "en": "beautiful detailed water",
+          "cn": "精致水面"
+        },
+        {
+          "en": "on the beach",
+          "cn": "海滩上"
+        },
+        {
+          "en": "flower field",
+          "cn": "花田"
+        },
+        {
+          "en": "fireworks",
+          "cn": "烟花"
+        },
+        {
+          "en": "intense shadows",
+          "cn": "强阴影"
+        },
+        {
+          "en": "strong rim light",
+          "cn": "强轮廓光"
+        },
+        {
+          "en": "against backlight at dusk",
+          "cn": "黄昏逆光"
+        },
+        {
+          "en": "golden hour lighting",
+          "cn": "黄金时段光"
+        },
+        {
+          "en": "beautiful purple sunset at beach",
+          "cn": "海滩紫色日落"
+        },
+        {
+          "en": "in the ocean",
+          "cn": "海洋中"
+        },
+        {
+          "en": "steam",
+          "cn": "蒸汽"
+        },
+        {
+          "en": "in the cyberpunk city",
+          "cn": "赛博朋克都市"
+        },
+        {
+          "en": "explosion",
+          "cn": "爆炸"
+        },
+        {
+          "en": "over the sea",
+          "cn": "海面上"
+        },
+        {
+          "en": "on the ocean",
+          "cn": "海洋上"
+        },
+        {
+          "en": "underwater",
+          "cn": "水下"
+        }
+      ]
+    },
+    {
+      "id": "style",
+      "cn_label": "风格",
+      "tags": [
+        {
+          "en": "artbook",
+          "cn": "画集"
+        },
+        {
+          "en": "game_cg",
+          "cn": "游戏CG"
+        },
+        {
+          "en": "comic",
+          "cn": "漫画"
+        },
+        {
+          "en": "4koma",
+          "cn": "四格漫画"
+        },
+        {
+          "en": "animated_gif",
+          "cn": "GIF动图"
+        },
+        {
+          "en": "dakimakura",
+          "cn": "抱枕"
+        },
+        {
+          "en": "cosplay",
+          "cn": "Cosplay"
+        },
+        {
+          "en": "crossover",
+          "cn": "跨界"
+        },
+        {
+          "en": "dark",
+          "cn": "黑暗"
+        },
+        {
+          "en": "light",
+          "cn": "明亮"
+        },
+        {
+          "en": "guro",
+          "cn": "猎奇"
+        },
+        {
+          "en": "night",
+          "cn": "夜晚"
+        },
+        {
+          "en": "realistic",
+          "cn": "写实"
+        },
+        {
+          "en": "photo",
+          "cn": "照片"
+        },
+        {
+          "en": "real",
+          "cn": "真实"
+        },
+        {
+          "en": "landscape/scenery",
+          "cn": "风景画"
+        },
+        {
+          "en": "huge_filesize",
+          "cn": "大文件"
+        },
+        {
+          "en": "absurdres",
+          "cn": "超高清"
+        },
+        {
+          "en": "highres",
+          "cn": "高清"
+        },
+        {
+          "en": "lowres",
+          "cn": "低分辨率"
+        },
+        {
+          "en": "checkered",
+          "cn": "棋盘格"
+        },
+        {
+          "en": "personification",
+          "cn": "拟人化"
+        },
+        {
+          "en": "parody",
+          "cn": "戏仿"
+        },
+        {
+          "en": "original",
+          "cn": "原创"
+        },
+        {
+          "en": "science_fiction",
+          "cn": "科幻"
+        },
+        {
+          "en": "cityscape",
+          "cn": "城市景观"
+        },
+        {
+          "en": "wallpaper",
+          "cn": "壁纸"
+        },
+        {
+          "en": "pixel_art",
+          "cn": "像素艺术"
+        },
+        {
+          "en": "monochrome",
+          "cn": "单色"
+        },
+        {
+          "en": "colorful",
+          "cn": "多彩"
+        },
+        {
+          "en": "optical_illusion",
+          "cn": "视觉错觉"
+        },
+        {
+          "en": "fine_art_parody",
+          "cn": "名画戏仿"
+        },
+        {
+          "en": "sketch",
+          "cn": "素描"
+        },
+        {
+          "en": "traditional_media",
+          "cn": "传统画法"
+        },
+        {
+          "en": "silhouette",
+          "cn": "剪影"
+        },
+        {
+          "en": "covr",
+          "cn": "封面"
+        },
+        {
+          "en": "translation_request",
+          "cn": "翻译请求"
+        },
+        {
+          "en": "transparent_background",
+          "cn": "透明背景"
+        },
+        {
+          "en": "watercolor_{medium}",
+          "cn": "水彩"
+        },
+        {
+          "en": "column_lineup",
+          "cn": "立绘排列"
+        },
+        {
+          "en": "incredibly_absurdres",
+          "cn": "极超高清"
+        },
+        {
+          "en": "Japanese",
+          "cn": "日系"
+        },
+        {
+          "en": "everyone",
+          "cn": "众人"
+        },
+        {
+          "en": "French",
+          "cn": "法国风"
+        },
+        {
+          "en": "Chinese",
+          "cn": "中国风"
+        },
+        {
+          "en": "expressions",
+          "cn": "表情"
+        },
+        {
+          "en": "English",
+          "cn": "英国风"
+        },
+        {
+          "en": "zoom_layer",
+          "cn": "近景"
+        },
+        {
+          "en": "profile",
+          "cn": "侧脸"
+        },
+        {
+          "en": "bust",
+          "cn": "胸像"
+        },
+        {
+          "en": "back",
+          "cn": "背面"
+        },
+        {
+          "en": "sample",
+          "cn": "样图"
+        },
+        {
+          "en": "album",
+          "cn": "专辑"
+        },
+        {
+          "en": "simple_background",
+          "cn": "纯色背景"
+        },
+        {
+          "en": "gradient_background",
+          "cn": "渐变背景"
+        }
+      ]
+    },
+    {
+      "id": "character",
+      "cn_label": "人物&角色",
+      "tags": [
+        {
+          "en": "girl",
+          "cn": "女孩"
+        },
+        {
+          "en": "2girls",
+          "cn": "2女孩"
+        },
+        {
+          "en": "3girls",
+          "cn": "3女孩"
+        },
+        {
+          "en": "boy",
+          "cn": "男孩"
+        },
+        {
+          "en": "2boys",
+          "cn": "2男孩"
+        },
+        {
+          "en": "3boys",
+          "cn": "3男孩"
+        },
+        {
+          "en": "solo",
+          "cn": "单人"
+        },
+        {
+          "en": "multiple girls",
+          "cn": "多女孩"
+        },
+        {
+          "en": "little girl",
+          "cn": "小女孩"
+        },
+        {
+          "en": "little boy",
+          "cn": "小男孩"
+        },
+        {
+          "en": "shota",
+          "cn": "正太"
+        },
+        {
+          "en": "loli",
+          "cn": "萝莉"
+        },
+        {
+          "en": "kawaii",
+          "cn": "可爱"
+        },
+        {
+          "en": "mesugaki",
+          "cn": "雌小鬼"
+        },
+        {
+          "en": "adorable girl",
+          "cn": "可爱女孩"
+        },
+        {
+          "en": "bishoujo",
+          "cn": "美少女"
+        },
+        {
+          "en": "gyaru",
+          "cn": "辣妹"
+        },
+        {
+          "en": "harem",
+          "cn": "后宫"
+        },
+        {
+          "en": "milf",
+          "cn": "熟女"
+        },
+        {
+          "en": "female pervert",
+          "cn": "女变态"
+        },
+        {
+          "en": "mature",
+          "cn": "成熟"
+        },
+        {
+          "en": "mature female",
+          "cn": "成熟女"
+        },
+        {
+          "en": "ojousama",
+          "cn": "大小姐"
+        },
+        {
+          "en": "sisters",
+          "cn": "姐妹"
+        },
+        {
+          "en": "angel",
+          "cn": "天使"
+        },
+        {
+          "en": "cheerleader",
+          "cn": "啦啦队"
+        },
+        {
+          "en": "chibi",
+          "cn": "Q版"
+        },
+        {
+          "en": "devil",
+          "cn": "恶魔"
+        },
+        {
+          "en": "doll",
+          "cn": "人偶"
+        },
+        {
+          "en": "fairy",
+          "cn": "仙女"
+        },
+        {
+          "en": "elf",
+          "cn": "精灵"
+        },
+        {
+          "en": "female",
+          "cn": "女性"
+        },
+        {
+          "en": "furry",
+          "cn": "兽人"
+        },
+        {
+          "en": "orc",
+          "cn": "兽人怪"
+        },
+        {
+          "en": "giantess",
+          "cn": "巨大娘"
+        },
+        {
+          "en": "idol",
+          "cn": "偶像"
+        },
+        {
+          "en": "kemonomimi_mode",
+          "cn": "兽耳娘"
+        },
+        {
+          "en": "trap",
+          "cn": "伪娘"
+        },
+        {
+          "en": "student",
+          "cn": "学生"
+        },
+        {
+          "en": "stewardess",
+          "cn": "空姐"
+        },
+        {
+          "en": "nurse",
+          "cn": "护士"
+        },
+        {
+          "en": "nun",
+          "cn": "修女"
+        },
+        {
+          "en": "no_humans",
+          "cn": "无人物"
+        },
+        {
+          "en": "ninja",
+          "cn": "忍者"
+        },
+        {
+          "en": "multiple_girls",
+          "cn": "多女孩"
+        },
+        {
+          "en": "monster",
+          "cn": "怪物"
+        },
+        {
+          "en": "minigirl",
+          "cn": "缩小女孩"
+        },
+        {
+          "en": "yuri",
+          "cn": "百合"
+        },
+        {
+          "en": "yukkuri_shiteitte_ne",
+          "cn": "悠悠"
+        },
+        {
+          "en": "miko",
+          "cn": "巫女"
+        },
+        {
+          "en": "yaoi",
+          "cn": "耽美"
+        },
+        {
+          "en": "crossdressing",
+          "cn": "异装"
+        },
+        {
+          "en": "mermaid",
+          "cn": "美人鱼"
+        },
+        {
+          "en": "male",
+          "cn": "男性"
+        },
+        {
+          "en": "witch",
+          "cn": "女巫"
+        },
+        {
+          "en": "waitress",
+          "cn": "女服务员"
+        },
+        {
+          "en": "maid",
+          "cn": "女仆"
+        },
+        {
+          "en": "magical_girl",
+          "cn": "魔法少女"
+        },
+        {
+          "en": "vampire",
+          "cn": "吸血鬼"
+        }
+      ]
+    },
+    {
+      "id": "hair",
+      "cn_label": "头发&发饰",
+      "tags": [
+        {
+          "en": "very short hair",
+          "cn": "极短发"
+        },
+        {
+          "en": "short hair",
+          "cn": "短发"
+        },
+        {
+          "en": "medium hair",
+          "cn": "中发"
+        },
+        {
+          "en": "long hair",
+          "cn": "长发"
+        },
+        {
+          "en": "very long hair",
+          "cn": "超长发"
+        },
+        {
+          "en": "absurdly long hair",
+          "cn": "极长发"
+        },
+        {
+          "en": "hair over shoulder",
+          "cn": "头发过肩"
+        },
+        {
+          "en": "alternate hair length",
+          "cn": "换发长"
+        },
+        {
+          "en": "blonde hair",
+          "cn": "金发"
+        },
+        {
+          "en": "brown hair",
+          "cn": "棕发"
+        },
+        {
+          "en": "black hair",
+          "cn": "黑发"
+        },
+        {
+          "en": "blue hair",
+          "cn": "蓝发"
+        },
+        {
+          "en": "purple hair",
+          "cn": "紫发"
+        },
+        {
+          "en": "pink hair",
+          "cn": "粉发"
+        },
+        {
+          "en": "white hair",
+          "cn": "白发"
+        },
+        {
+          "en": "red hair",
+          "cn": "红发"
+        },
+        {
+          "en": "grey hair",
+          "cn": "灰发"
+        },
+        {
+          "en": "green hair",
+          "cn": "绿发"
+        },
+        {
+          "en": "silver hair",
+          "cn": "银发"
+        },
+        {
+          "en": "orange hair",
+          "cn": "橙发"
+        },
+        {
+          "en": "light brown hair",
+          "cn": "浅棕发"
+        },
+        {
+          "en": "light purple hair",
+          "cn": "浅紫发"
+        },
+        {
+          "en": "light blue hair",
+          "cn": "浅蓝发"
+        },
+        {
+          "en": "platinum blonde hair",
+          "cn": "铂金发"
+        },
+        {
+          "en": "gradient hair",
+          "cn": "渐变发"
+        },
+        {
+          "en": "multicolored hair",
+          "cn": "多色发"
+        },
+        {
+          "en": "shiny hair",
+          "cn": "亮泽发"
+        },
+        {
+          "en": "two-tone hair",
+          "cn": "双色发"
+        },
+        {
+          "en": "streaked hair",
+          "cn": "挑染发"
+        },
+        {
+          "en": "aqua hair",
+          "cn": "水蓝发"
+        },
+        {
+          "en": "colored inner hair",
+          "cn": "内染发"
+        },
+        {
+          "en": "alternate hair color",
+          "cn": "换发色"
+        },
+        {
+          "en": "hair up",
+          "cn": "盘发"
+        },
+        {
+          "en": "hair down",
+          "cn": "披发"
+        },
+        {
+          "en": "wet hair",
+          "cn": "湿发"
+        },
+        {
+          "en": "ahoge",
+          "cn": "呆毛"
+        },
+        {
+          "en": "antenna hair",
+          "cn": "天线呆毛"
+        },
+        {
+          "en": "bob cut",
+          "cn": "波波头"
+        },
+        {
+          "en": "hime_cut",
+          "cn": "姬发式"
+        },
+        {
+          "en": "crossed bangs",
+          "cn": "交叉刘海"
+        },
+        {
+          "en": "hair wings",
+          "cn": "发翼"
+        },
+        {
+          "en": "disheveled hair",
+          "cn": "凌乱发"
+        },
+        {
+          "en": "wavy hair",
+          "cn": "波浪发"
+        },
+        {
+          "en": "curly_hair",
+          "cn": "卷发"
+        },
+        {
+          "en": "hair in takes",
+          "cn": "发丝分缕"
+        },
+        {
+          "en": "forehead",
+          "cn": "额头"
+        },
+        {
+          "en": "drill hair",
+          "cn": "钻头卷"
+        },
+        {
+          "en": "hair bun",
+          "cn": "发髻"
+        },
+        {
+          "en": "double_bun",
+          "cn": "双发髻"
+        },
+        {
+          "en": "straight hair",
+          "cn": "直发"
+        },
+        {
+          "en": "spiked hair",
+          "cn": "尖刺发"
+        },
+        {
+          "en": "short hair with long locks",
+          "cn": "短发长束"
+        },
+        {
+          "en": "low-tied long hair",
+          "cn": "低束长发"
+        },
+        {
+          "en": "asymmetrical hair",
+          "cn": "不对称发"
+        },
+        {
+          "en": "alternate hairstyle",
+          "cn": "换发型"
+        },
+        {
+          "en": "big hair",
+          "cn": "蓬松发"
+        },
+        {
+          "en": "hair strand",
+          "cn": "发丝"
+        },
+        {
+          "en": "hair twirling",
+          "cn": "缠发丝"
+        },
+        {
+          "en": "pointy hair",
+          "cn": "尖发"
+        },
+        {
+          "en": "hair slicked back",
+          "cn": "后梳发"
+        },
+        {
+          "en": "hair pulled back",
+          "cn": "向后拉发"
+        },
+        {
+          "en": "split-color hair",
+          "cn": "对半染"
+        },
+        {
+          "en": "braid",
+          "cn": "辫子"
+        },
+        {
+          "en": "twin braids",
+          "cn": "双辫"
+        },
+        {
+          "en": "single braid",
+          "cn": "单辫"
+        },
+        {
+          "en": "side braid",
+          "cn": "侧辫"
+        },
+        {
+          "en": "long braid",
+          "cn": "长辫"
+        },
+        {
+          "en": "french braid",
+          "cn": "法式辫"
+        },
+        {
+          "en": "crown braid",
+          "cn": "皇冠辫"
+        },
+        {
+          "en": "braided bun",
+          "cn": "辫子发髻"
+        },
+        {
+          "en": "ponytail",
+          "cn": "马尾"
+        },
+        {
+          "en": "braided ponytail",
+          "cn": "辫子马尾"
+        },
+        {
+          "en": "high ponytail",
+          "cn": "高马尾"
+        },
+        {
+          "en": "twintails",
+          "cn": "双马尾"
+        },
+        {
+          "en": "short_ponytail",
+          "cn": "短马尾"
+        },
+        {
+          "en": "twin_braids",
+          "cn": "双辫"
+        },
+        {
+          "en": "Side ponytail",
+          "cn": "侧马尾"
+        },
+        {
+          "en": "bangs",
+          "cn": "刘海"
+        },
+        {
+          "en": "blunt bangs",
+          "cn": "齐刘海"
+        },
+        {
+          "en": "parted bangs",
+          "cn": "分刘海"
+        },
+        {
+          "en": "swept bangs",
+          "cn": "斜刘海"
+        },
+        {
+          "en": "asymmetrical bangs",
+          "cn": "不对称刘海"
+        },
+        {
+          "en": "braided bangs",
+          "cn": "辫子刘海"
+        },
+        {
+          "en": "long bangs",
+          "cn": "长刘海"
+        },
+        {
+          "en": "bangs pinned back",
+          "cn": "刘海别向后"
+        },
+        {
+          "en": "diagonal bangs",
+          "cn": "斜向刘海"
+        },
+        {
+          "en": "dyed bangs",
+          "cn": "染色刘海"
+        },
+        {
+          "en": "hair censor",
+          "cn": "头发遮挡"
+        },
+        {
+          "en": "hair over breasts",
+          "cn": "头发遮胸"
+        },
+        {
+          "en": "hair between breasts",
+          "cn": "发丝贴胸"
+        },
+        {
+          "en": "hair behind ear",
+          "cn": "耳后发"
+        },
+        {
+          "en": "hair over eyes",
+          "cn": "头发遮眼"
+        },
+        {
+          "en": "hair over one eye",
+          "cn": "单眼遮发"
+        },
+        {
+          "en": "hair between eyes",
+          "cn": "眉间发"
+        },
+        {
+          "en": "hair ornament",
+          "cn": "发饰"
+        },
+        {
+          "en": "hair bow",
+          "cn": "发蝴蝶结"
+        },
+        {
+          "en": "hair ribbon",
+          "cn": "发丝带"
+        },
+        {
+          "en": "hairband",
+          "cn": "发箍"
+        },
+        {
+          "en": "hair flower",
+          "cn": "发花"
+        },
+        {
+          "en": "hair bobbles",
+          "cn": "发球"
+        },
+        {
+          "en": "hairclip",
+          "cn": "发卡"
+        },
+        {
+          "en": "single hair bun",
+          "cn": "单发髻"
+        },
+        {
+          "en": "x hair ornament",
+          "cn": "X发饰"
+        },
+        {
+          "en": "black hairband",
+          "cn": "黑发箍"
+        },
+        {
+          "en": "hair scrunchie",
+          "cn": "发圈"
+        },
+        {
+          "en": "hair rings",
+          "cn": "发环"
+        },
+        {
+          "en": "tied hair",
+          "cn": "扎发"
+        },
+        {
+          "en": "hairpin",
+          "cn": "发簪"
+        },
+        {
+          "en": "white hairband",
+          "cn": "白发箍"
+        },
+        {
+          "en": "hair tie",
+          "cn": "发绳"
+        },
+        {
+          "en": "frog hair ornament",
+          "cn": "青蛙发饰"
+        },
+        {
+          "en": "food-themed hair ornament",
+          "cn": "食物发饰"
+        },
+        {
+          "en": "tentacle hair",
+          "cn": "触手发"
+        },
+        {
+          "en": "star hair ornament",
+          "cn": "星星发饰"
+        },
+        {
+          "en": "hair bell",
+          "cn": "发铃"
+        },
+        {
+          "en": "heart hair ornament",
+          "cn": "心形发饰"
+        },
+        {
+          "en": "red hairband",
+          "cn": "红发箍"
+        },
+        {
+          "en": "anchor hair ornament",
+          "cn": "船锚发饰"
+        },
+        {
+          "en": "blue hairband",
+          "cn": "蓝发箍"
+        },
+        {
+          "en": "feather hair ornament",
+          "cn": "羽毛发饰"
+        },
+        {
+          "en": "cone hair bun",
+          "cn": "锥形发髻"
+        },
+        {
+          "en": "crescent hair ornament",
+          "cn": "月牙发饰"
+        },
+        {
+          "en": "lolita hairband",
+          "cn": "洛丽塔发箍"
+        },
+        {
+          "en": "snake hair ornament",
+          "cn": "蛇发饰"
+        },
+        {
+          "en": "hair stick",
+          "cn": "发簪"
+        },
+        {
+          "en": "butterfly hair ornament",
+          "cn": "蝴蝶发饰"
+        },
+        {
+          "en": "leaf hair ornament",
+          "cn": "叶子发饰"
+        },
+        {
+          "en": "bunny hair ornament",
+          "cn": "兔子发饰"
+        },
+        {
+          "en": "skull hair ornament",
+          "cn": "骷髅发饰"
+        },
+        {
+          "en": "yellow hairband",
+          "cn": "黄发箍"
+        },
+        {
+          "en": "pink hairband",
+          "cn": "粉发箍"
+        },
+        {
+          "en": "dark blue hair",
+          "cn": "深蓝发"
+        },
+        {
+          "en": "bow hairband",
+          "cn": "蝴蝶结发箍"
+        },
+        {
+          "en": "cat hair ornament",
+          "cn": "猫发饰"
+        },
+        {
+          "en": "musical note hair ornament",
+          "cn": "音符发饰"
+        },
+        {
+          "en": "carrot hair ornament",
+          "cn": "胡萝卜发饰"
+        },
+        {
+          "en": "purple hairband",
+          "cn": "紫发箍"
+        },
+        {
+          "en": "hair tucking",
+          "cn": "拨发"
+        },
+        {
+          "en": "hair beads",
+          "cn": "发珠"
+        },
+        {
+          "en": "multiple hair bows",
+          "cn": "多蝴蝶结"
+        },
+        {
+          "en": "hairpods",
+          "cn": "发夹"
+        },
+        {
+          "en": "bat hair ornament",
+          "cn": "蝙蝠发饰"
+        },
+        {
+          "en": "bone hair ornament",
+          "cn": "骨头发饰"
+        },
+        {
+          "en": "orange hairband",
+          "cn": "橙发箍"
+        },
+        {
+          "en": "multi-tied hair",
+          "cn": "多束扎发"
+        },
+        {
+          "en": "snowflake hair ornament",
+          "cn": "雪花发饰"
+        }
+      ]
+    },
+    {
+      "id": "face",
+      "cn_label": "五官&表情",
+      "tags": [
+        {
+          "en": "food on face",
+          "cn": "脸上食物"
+        },
+        {
+          "en": "light blush",
+          "cn": "轻微脸红"
+        },
+        {
+          "en": "facepaint",
+          "cn": "面绘"
+        },
+        {
+          "en": "makeup",
+          "cn": "化妆"
+        },
+        {
+          "en": "cute face",
+          "cn": "可爱脸"
+        },
+        {
+          "en": "white colored eyelashes",
+          "cn": "白睫毛"
+        },
+        {
+          "en": "longeyelashes",
+          "cn": "长睫毛"
+        },
+        {
+          "en": "white eyebrows",
+          "cn": "白眉"
+        },
+        {
+          "en": "tsurime",
+          "cn": "吊眼"
+        },
+        {
+          "en": "gradient_eyes",
+          "cn": "渐变眼"
+        },
+        {
+          "en": "beautiful detailed eyes",
+          "cn": "精致眼睛"
+        },
+        {
+          "en": "tareme",
+          "cn": "垂眼"
+        },
+        {
+          "en": "slit pupils",
+          "cn": "竖瞳"
+        },
+        {
+          "en": "heterochromia",
+          "cn": "异色瞳"
+        },
+        {
+          "en": "heterochromia blue red",
+          "cn": "蓝红异色瞳"
+        },
+        {
+          "en": "aqua eyes",
+          "cn": "水蓝眼"
+        },
+        {
+          "en": "looking at viewer",
+          "cn": "看向观众"
+        },
+        {
+          "en": "eyeball",
+          "cn": "眼球"
+        },
+        {
+          "en": "stare",
+          "cn": "盯看"
+        },
+        {
+          "en": "visible through hair",
+          "cn": "透过头发可见"
+        },
+        {
+          "en": "looking to the side",
+          "cn": "侧视"
+        },
+        {
+          "en": "constricted pupils",
+          "cn": "缩瞳"
+        },
+        {
+          "en": "symbol-shaped pupils",
+          "cn": "符号瞳孔"
+        },
+        {
+          "en": "heart in eye",
+          "cn": "眼中爱心"
+        },
+        {
+          "en": "heart-shaped pupils",
+          "cn": "心形瞳孔"
+        },
+        {
+          "en": "wink",
+          "cn": "抛媚眼"
+        },
+        {
+          "en": "mole under eye",
+          "cn": "眼下痣"
+        },
+        {
+          "en": "eyes closed",
+          "cn": "闭眼"
+        },
+        {
+          "en": "no_nose",
+          "cn": "无鼻子"
+        },
+        {
+          "en": "fake animal ears",
+          "cn": "假兽耳"
+        },
+        {
+          "en": "animal ear fluff",
+          "cn": "兽耳毛"
+        },
+        {
+          "en": "animal_ears",
+          "cn": "兽耳"
+        },
+        {
+          "en": "fox_ears",
+          "cn": "狐耳"
+        },
+        {
+          "en": "bunny_ears",
+          "cn": "兔耳"
+        },
+        {
+          "en": "cat_ears",
+          "cn": "猫耳"
+        },
+        {
+          "en": "dog_ears",
+          "cn": "狗耳"
+        },
+        {
+          "en": "mouse_ears",
+          "cn": "鼠耳"
+        },
+        {
+          "en": "hair ear",
+          "cn": "发耳"
+        },
+        {
+          "en": "pointy ears",
+          "cn": "尖耳"
+        },
+        {
+          "en": "light smile",
+          "cn": "浅笑"
+        },
+        {
+          "en": "seductive smile",
+          "cn": "诱惑笑"
+        },
+        {
+          "en": "grin",
+          "cn": "咧嘴笑"
+        },
+        {
+          "en": "laughing",
+          "cn": "大笑"
+        },
+        {
+          "en": "teeth",
+          "cn": "牙齿"
+        },
+        {
+          "en": "excited",
+          "cn": "兴奋"
+        },
+        {
+          "en": "embarrassed",
+          "cn": "害羞"
+        },
+        {
+          "en": "blush",
+          "cn": "脸红"
+        },
+        {
+          "en": "shy",
+          "cn": "害羞"
+        },
+        {
+          "en": "nose blush",
+          "cn": "鼻红"
+        },
+        {
+          "en": "expressionless",
+          "cn": "无表情"
+        },
+        {
+          "en": "expressionless eyes",
+          "cn": "无表情眼"
+        },
+        {
+          "en": "sleepy",
+          "cn": "困倦"
+        },
+        {
+          "en": "drunk",
+          "cn": "醉酒"
+        },
+        {
+          "en": "tears",
+          "cn": "泪水"
+        },
+        {
+          "en": "crying with eyes open",
+          "cn": "睁眼哭"
+        },
+        {
+          "en": "sad",
+          "cn": "悲伤"
+        },
+        {
+          "en": "pout",
+          "cn": "噘嘴"
+        },
+        {
+          "en": "sigh",
+          "cn": "叹气"
+        },
+        {
+          "en": "wide eyed",
+          "cn": "瞪眼"
+        },
+        {
+          "en": "angry",
+          "cn": "愤怒"
+        },
+        {
+          "en": "annoyed",
+          "cn": "不悦"
+        },
+        {
+          "en": "frown",
+          "cn": "皱眉"
+        },
+        {
+          "en": "smirk",
+          "cn": "坏笑"
+        },
+        {
+          "en": "serious",
+          "cn": "严肃"
+        },
+        {
+          "en": "jitome",
+          "cn": "死鱼眼"
+        },
+        {
+          "en": "scowl",
+          "cn": "怒瞪"
+        },
+        {
+          "en": "crazy",
+          "cn": "疯狂"
+        },
+        {
+          "en": "dark_persona",
+          "cn": "黑化"
+        },
+        {
+          "en": "smug",
+          "cn": "得意"
+        },
+        {
+          "en": "naughty_face",
+          "cn": "淫荡脸"
+        },
+        {
+          "en": "one eye closed",
+          "cn": "闭一眼"
+        },
+        {
+          "en": "half-closed eyes",
+          "cn": "半闭眼"
+        },
+        {
+          "en": "nosebleed",
+          "cn": "流鼻血"
+        },
+        {
+          "en": "eyelid pull",
+          "cn": "下拉眼皮"
+        },
+        {
+          "en": "tongue",
+          "cn": "舌头"
+        },
+        {
+          "en": "tongue out",
+          "cn": "伸舌"
+        },
+        {
+          "en": "closed mouth",
+          "cn": "闭嘴"
+        },
+        {
+          "en": "open mouth",
+          "cn": "张嘴"
+        },
+        {
+          "en": "lipstick",
+          "cn": "口红"
+        },
+        {
+          "en": "fangs",
+          "cn": "獠牙"
+        },
+        {
+          "en": "clenched teeth",
+          "cn": "咬牙"
+        },
+        {
+          "en": ":3",
+          "cn": ":3"
+        },
+        {
+          "en": ":p",
+          "cn": ":p吐舌"
+        },
+        {
+          "en": ":q",
+          "cn": ":q"
+        },
+        {
+          "en": ":t",
+          "cn": ":t"
+        },
+        {
+          "en": ":d",
+          "cn": ":d大笑"
+        },
+        {
+          "en": "endured_face",
+          "cn": "忍耐脸"
+        },
+        {
+          "en": "ahegao",
+          "cn": "阿黑颜"
+        },
+        {
+          "en": "blood on face",
+          "cn": "脸上血"
+        },
+        {
+          "en": "saliva",
+          "cn": "口水"
+        }
+      ]
+    },
+    {
+      "id": "eyes",
+      "cn_label": "眼睛",
+      "tags": [
+        {
+          "en": "blue eyes",
+          "cn": "蓝眼"
+        },
+        {
+          "en": "red eyes",
+          "cn": "红眼"
+        },
+        {
+          "en": "brown eyes",
+          "cn": "棕眼"
+        },
+        {
+          "en": "green eyes",
+          "cn": "绿眼"
+        },
+        {
+          "en": "purple eyes",
+          "cn": "紫眼"
+        },
+        {
+          "en": "yellow eyes",
+          "cn": "黄眼"
+        },
+        {
+          "en": "pink eyes",
+          "cn": "粉眼"
+        },
+        {
+          "en": "black eyes",
+          "cn": "黑眼"
+        },
+        {
+          "en": "aqua eyes",
+          "cn": "水蓝眼"
+        },
+        {
+          "en": "orange eyes",
+          "cn": "橙眼"
+        },
+        {
+          "en": "grey eyes",
+          "cn": "灰眼"
+        },
+        {
+          "en": "multicolored eyes",
+          "cn": "多色眼"
+        },
+        {
+          "en": "white eyes",
+          "cn": "白眼"
+        },
+        {
+          "en": "gradient eyes",
+          "cn": "渐变眼"
+        },
+        {
+          "en": "closed eyes",
+          "cn": "闭眼"
+        },
+        {
+          "en": "half-closed eyes",
+          "cn": "半闭眼"
+        },
+        {
+          "en": "crying with eyes open",
+          "cn": "睁眼哭"
+        },
+        {
+          "en": "narrowed eyes",
+          "cn": "眯眼"
+        },
+        {
+          "en": "hidden eyes",
+          "cn": "隐眼"
+        },
+        {
+          "en": "heart-shaped eyes",
+          "cn": "心形眼"
+        },
+        {
+          "en": "button eyes",
+          "cn": "纽扣眼"
+        },
+        {
+          "en": "cephalopod eyes",
+          "cn": "章鱼眼"
+        },
+        {
+          "en": "eyes visible through hair",
+          "cn": "透发见眼"
+        },
+        {
+          "en": "glowing eyes",
+          "cn": "发光眼"
+        },
+        {
+          "en": "rolling eyes",
+          "cn": "翻白眼"
+        },
+        {
+          "en": "blank eyes",
+          "cn": "空洞眼"
+        },
+        {
+          "en": "no eyes",
+          "cn": "无眼"
+        },
+        {
+          "en": "sparkling eyes",
+          "cn": "星眼"
+        },
+        {
+          "en": "extra eyes",
+          "cn": "多眼"
+        },
+        {
+          "en": "crazy eyes",
+          "cn": "疯狂眼"
+        },
+        {
+          "en": "solid circle eyes",
+          "cn": "圆点眼"
+        },
+        {
+          "en": "solid oval eyes",
+          "cn": "椭圆眼"
+        },
+        {
+          "en": "uneven eyes",
+          "cn": "不均眼"
+        },
+        {
+          "en": "empty eyes",
+          "cn": "空洞眼"
+        },
+        {
+          "en": "blood from eyes",
+          "cn": "眼流血"
+        },
+        {
+          "en": "eyeshadow",
+          "cn": "眼影"
+        },
+        {
+          "en": "red eyeshadow",
+          "cn": "红眼影"
+        },
+        {
+          "en": "purple eyeshadow",
+          "cn": "紫眼影"
+        },
+        {
+          "en": "blue eyeshadow",
+          "cn": "蓝眼影"
+        },
+        {
+          "en": "pink eyeshadow",
+          "cn": "粉眼影"
+        },
+        {
+          "en": "green eyeshadow",
+          "cn": "绿眼影"
+        },
+        {
+          "en": "bags under eyes",
+          "cn": "眼袋"
+        },
+        {
+          "en": "ringed eyes",
+          "cn": "黑眼圈"
+        },
+        {
+          "en": "covered eyes",
+          "cn": "遮眼"
+        },
+        {
+          "en": "covering eyes",
+          "cn": "遮眼中"
+        },
+        {
+          "en": "shading eyes",
+          "cn": "遮阳"
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "cn_label": "身体",
+      "tags": [
+        {
+          "en": "breasts",
+          "cn": "胸部"
+        },
+        {
+          "en": "small breasts",
+          "cn": "小胸"
+        },
+        {
+          "en": "medium breasts",
+          "cn": "中胸"
+        },
+        {
+          "en": "large breasts",
+          "cn": "巨乳"
+        },
+        {
+          "en": "huge breasts",
+          "cn": "超巨乳"
+        },
+        {
+          "en": "alternate breast size",
+          "cn": "换胸围"
+        },
+        {
+          "en": "mole on breast",
+          "cn": "乳房痣"
+        },
+        {
+          "en": "between breasts",
+          "cn": "乳沟间"
+        },
+        {
+          "en": "breasts apart",
+          "cn": "胸部分开"
+        },
+        {
+          "en": "hanging breasts",
+          "cn": "下垂胸"
+        },
+        {
+          "en": "bouncing breasts",
+          "cn": "晃动胸"
+        },
+        {
+          "en": "breasts out",
+          "cn": "露乳"
+        },
+        {
+          "en": "one breast out",
+          "cn": "单边露乳"
+        }
+      ]
+    },
+    {
+      "id": "clothes",
+      "cn_label": "服装",
+      "tags": [
+        {
+          "en": "sailor collar",
+          "cn": "水手领"
+        },
+        {
+          "en": "hat",
+          "cn": "帽子"
+        },
+        {
+          "en": "shirt",
+          "cn": "衬衫"
+        },
+        {
+          "en": "serafuku",
+          "cn": "水手服"
+        },
+        {
+          "en": "sailor suite",
+          "cn": "水手服"
+        },
+        {
+          "en": "sailor shirt",
+          "cn": "水手衫"
+        },
+        {
+          "en": "shorts under skirt",
+          "cn": "裙下短裤"
+        },
+        {
+          "en": "collared shirt",
+          "cn": "有领衬衫"
+        },
+        {
+          "en": "school uniform",
+          "cn": "校服"
+        },
+        {
+          "en": "seifuku",
+          "cn": "制服"
+        },
+        {
+          "en": "business_suit",
+          "cn": "商务西装"
+        },
+        {
+          "en": "jacket",
+          "cn": "夹克"
+        },
+        {
+          "en": "suit",
+          "cn": "西装"
+        },
+        {
+          "en": "garreg mach monastery uniform",
+          "cn": "加雷格修道院制服"
+        },
+        {
+          "en": "revealing dress",
+          "cn": "暴露装"
+        },
+        {
+          "en": "pink lucency full dress",
+          "cn": "粉透明长裙"
+        },
+        {
+          "en": "cleavage dress",
+          "cn": "露乳沟裙"
+        },
+        {
+          "en": "sleeveless dress",
+          "cn": "无袖连衣裙"
+        },
+        {
+          "en": "whitedress",
+          "cn": "白色连衣裙"
+        },
+        {
+          "en": "wedding_dress",
+          "cn": "婚纱"
+        },
+        {
+          "en": "Sailor dress",
+          "cn": "水手裙"
+        },
+        {
+          "en": "sweater dress",
+          "cn": "毛衣裙"
+        },
+        {
+          "en": "ribbed sweater",
+          "cn": "罗纹毛衣"
+        },
+        {
+          "en": "dungarees",
+          "cn": "工装背带裤"
+        },
+        {
+          "en": "brown cardigan",
+          "cn": "棕开衫"
+        },
+        {
+          "en": "hoodie",
+          "cn": "连帽衫"
+        },
+        {
+          "en": "robe",
+          "cn": "长袍"
+        },
+        {
+          "en": "cape",
+          "cn": "披风"
+        },
+        {
+          "en": "cardigan",
+          "cn": "开衫"
+        },
+        {
+          "en": "apron",
+          "cn": "围裙"
+        },
+        {
+          "en": "gothic",
+          "cn": "哥特"
+        },
+        {
+          "en": "lolita_fashion",
+          "cn": "洛丽塔"
+        },
+        {
+          "en": "gothic_lolita",
+          "cn": "哥特洛丽塔"
+        },
+        {
+          "en": "western",
+          "cn": "西部风"
+        },
+        {
+          "en": "sweater jacket",
+          "cn": "毛衣外套"
+        },
+        {
+          "en": "off_shoulder",
+          "cn": "露肩"
+        },
+        {
+          "en": "bare_shoulders",
+          "cn": "裸肩"
+        },
+        {
+          "en": "barefoot",
+          "cn": "赤脚"
+        },
+        {
+          "en": "bare_legs",
+          "cn": "裸腿"
+        },
+        {
+          "en": "striped",
+          "cn": "条纹"
+        },
+        {
+          "en": "polka_dot",
+          "cn": "圆点"
+        },
+        {
+          "en": "frills",
+          "cn": "蕾丝边"
+        },
+        {
+          "en": "lace",
+          "cn": "蕾丝"
+        },
+        {
+          "en": "buruma",
+          "cn": "体操裤"
+        },
+        {
+          "en": "sportswear",
+          "cn": "运动服"
+        },
+        {
+          "en": "gym_uniform",
+          "cn": "体操服"
+        },
+        {
+          "en": "tank_top",
+          "cn": "背心"
+        },
+        {
+          "en": "tartan",
+          "cn": "格子花呢"
+        },
+        {
+          "en": "black sports bra",
+          "cn": "黑运动内衣"
+        },
+        {
+          "en": "crop top",
+          "cn": "露腹上衣"
+        },
+        {
+          "en": "pajamas",
+          "cn": "睡衣"
+        },
+        {
+          "en": "japanese_clothes",
+          "cn": "日式服装"
+        },
+        {
+          "en": "obi",
+          "cn": "和服腰带"
+        },
+        {
+          "en": "mesh",
+          "cn": "网眼布"
+        },
+        {
+          "en": "sleeveless shirt",
+          "cn": "无袖衫"
+        },
+        {
+          "en": "detached_sleeves",
+          "cn": "分离袖"
+        },
+        {
+          "en": "white bloomers",
+          "cn": "白灯笼短裤"
+        },
+        {
+          "en": "high - waist shorts",
+          "cn": "高腰短裤"
+        },
+        {
+          "en": "cropped jacket",
+          "cn": "短款夹克"
+        },
+        {
+          "en": "pleated_skirt",
+          "cn": "百褶裙"
+        },
+        {
+          "en": "skirt",
+          "cn": "裙子"
+        },
+        {
+          "en": "miniskirt",
+          "cn": "迷你裙"
+        },
+        {
+          "en": "short shorts",
+          "cn": "超短裤"
+        },
+        {
+          "en": "summer_dress",
+          "cn": "夏装"
+        },
+        {
+          "en": "bloomers",
+          "cn": "灯笼短裤"
+        },
+        {
+          "en": "shorts",
+          "cn": "短裤"
+        },
+        {
+          "en": "bike_shorts",
+          "cn": "自行车短裤"
+        },
+        {
+          "en": "dolphin shorts",
+          "cn": "海豚短裤"
+        },
+        {
+          "en": "belt",
+          "cn": "腰带"
+        },
+        {
+          "en": "bikini",
+          "cn": "比基尼"
+        },
+        {
+          "en": "sling bikini",
+          "cn": "吊带比基尼"
+        },
+        {
+          "en": "bikini_top",
+          "cn": "比基尼上装"
+        },
+        {
+          "en": "bikini top only",
+          "cn": "只穿比基尼上装"
+        },
+        {
+          "en": "side - tie bikini bottom",
+          "cn": "侧绑比基尼下装"
+        },
+        {
+          "en": "side-tie_bikini",
+          "cn": "侧绑比基尼"
+        },
+        {
+          "en": "friled bikini",
+          "cn": "蕾丝比基尼"
+        },
+        {
+          "en": "bikini under clothes",
+          "cn": "衣下比基尼"
+        },
+        {
+          "en": "swimsuit",
+          "cn": "泳衣"
+        },
+        {
+          "en": "school swimsuit",
+          "cn": "学校泳衣"
+        },
+        {
+          "en": "one-piece swimsuit",
+          "cn": "连体泳衣"
+        },
+        {
+          "en": "competition swimsuit",
+          "cn": "竞赛泳衣"
+        },
+        {
+          "en": "Sukumizu",
+          "cn": "学校泳衣"
+        },
+        {
+          "en": "no bra",
+          "cn": "无胸罩"
+        },
+        {
+          "en": "bra",
+          "cn": "胸罩"
+        },
+        {
+          "en": "victorian",
+          "cn": "维多利亚风"
+        },
+        {
+          "en": "frilled bra",
+          "cn": "蕾丝胸罩"
+        },
+        {
+          "en": "sexy lingerie",
+          "cn": "性感内衣"
+        },
+        {
+          "en": "transparent underwear",
+          "cn": "透明内衣"
+        },
+        {
+          "en": "sarashi",
+          "cn": "布带"
+        },
+        {
+          "en": "bustier",
+          "cn": "无带胸衣"
+        },
+        {
+          "en": "chemise",
+          "cn": "衬裙"
+        },
+        {
+          "en": "underwear",
+          "cn": "内衣"
+        },
+        {
+          "en": "panties",
+          "cn": "内裤"
+        },
+        {
+          "en": "striped_panties",
+          "cn": "条纹内裤"
+        },
+        {
+          "en": "no_panties",
+          "cn": "无内裤"
+        },
+        {
+          "en": "lowleg_panties/low_leg_panties",
+          "cn": "低腰内裤"
+        },
+        {
+          "en": "side-tie_panties",
+          "cn": "侧绑内裤"
+        },
+        {
+          "en": "string_panties",
+          "cn": "丁字内裤"
+        },
+        {
+          "en": "thong",
+          "cn": "丁字裤"
+        },
+        {
+          "en": "fundoshi",
+          "cn": "褌"
+        },
+        {
+          "en": "lingerie",
+          "cn": "内衣"
+        }
+      ]
+    },
+    {
+      "id": "legwear",
+      "cn_label": "袜子&腿饰",
+      "tags": [
+        {
+          "en": "bare legs",
+          "cn": "裸腿"
+        },
+        {
+          "en": "garter straps",
+          "cn": "吊袜带"
+        },
+        {
+          "en": "garter belt",
+          "cn": "吊袜腰带"
+        },
+        {
+          "en": "socks",
+          "cn": "袜子"
+        },
+        {
+          "en": "kneehighs",
+          "cn": "过膝袜"
+        },
+        {
+          "en": "white kneehighs",
+          "cn": "白过膝袜"
+        },
+        {
+          "en": "black kneehighs",
+          "cn": "黑过膝袜"
+        },
+        {
+          "en": "over-kneehighs",
+          "cn": "超过膝袜"
+        },
+        {
+          "en": "single kneehigh",
+          "cn": "单只过膝袜"
+        },
+        {
+          "en": "tabi",
+          "cn": "足袋"
+        },
+        {
+          "en": "bobby socks",
+          "cn": "短袜"
+        },
+        {
+          "en": "loose socks",
+          "cn": "松垮袜"
+        },
+        {
+          "en": "single sock",
+          "cn": "单只袜"
+        },
+        {
+          "en": "no socks",
+          "cn": "无袜"
+        },
+        {
+          "en": "socks removed",
+          "cn": "脱袜"
+        },
+        {
+          "en": "ankle socks",
+          "cn": "脚踝袜"
+        },
+        {
+          "en": "striped socks",
+          "cn": "条纹袜"
+        },
+        {
+          "en": "blue socks",
+          "cn": "蓝袜"
+        },
+        {
+          "en": "grey socks",
+          "cn": "灰袜"
+        },
+        {
+          "en": "red socks",
+          "cn": "红袜"
+        },
+        {
+          "en": "frilled socks",
+          "cn": "蕾丝袜"
+        },
+        {
+          "en": "thighhighs",
+          "cn": "大腿袜"
+        },
+        {
+          "en": "black thighhighs",
+          "cn": "黑大腿袜"
+        },
+        {
+          "en": "white thighhighs",
+          "cn": "白大腿袜"
+        },
+        {
+          "en": "striped thighhighs",
+          "cn": "条纹大腿袜"
+        },
+        {
+          "en": "brown thighhighs",
+          "cn": "棕大腿袜"
+        },
+        {
+          "en": "blue thighhighs",
+          "cn": "蓝大腿袜"
+        },
+        {
+          "en": "red thighhighs",
+          "cn": "红大腿袜"
+        },
+        {
+          "en": "purple thighhighs",
+          "cn": "紫大腿袜"
+        },
+        {
+          "en": "pink thighhighs",
+          "cn": "粉大腿袜"
+        },
+        {
+          "en": "grey thighhighs",
+          "cn": "灰大腿袜"
+        },
+        {
+          "en": "thighhighs under boots",
+          "cn": "靴下大腿袜"
+        },
+        {
+          "en": "green thighhighs",
+          "cn": "绿大腿袜"
+        },
+        {
+          "en": "yellow thighhighs",
+          "cn": "黄大腿袜"
+        },
+        {
+          "en": "orange thighhighs",
+          "cn": "橙大腿袜"
+        },
+        {
+          "en": "vertical-striped thighhighs",
+          "cn": "竖纹大腿袜"
+        },
+        {
+          "en": "frilled thighhighs",
+          "cn": "蕾丝大腿袜"
+        },
+        {
+          "en": "fishnet thighhighs",
+          "cn": "网眼大腿袜"
+        },
+        {
+          "en": "pantyhose",
+          "cn": "连裤袜"
+        },
+        {
+          "en": "black pantyhose",
+          "cn": "黑连裤袜"
+        },
+        {
+          "en": "white pantyhose",
+          "cn": "白连裤袜"
+        },
+        {
+          "en": "thighband pantyhose",
+          "cn": "大腿带连裤袜"
+        },
+        {
+          "en": "brown pantyhose",
+          "cn": "棕连裤袜"
+        },
+        {
+          "en": "fishnet pantyhose",
+          "cn": "网眼连裤袜"
+        },
+        {
+          "en": "striped pantyhose",
+          "cn": "条纹连裤袜"
+        },
+        {
+          "en": "vertical-striped pantyhose",
+          "cn": "竖纹连裤袜"
+        },
+        {
+          "en": "grey pantyhose",
+          "cn": "灰连裤袜"
+        },
+        {
+          "en": "blue pantyhose",
+          "cn": "蓝连裤袜"
+        },
+        {
+          "en": "single leg pantyhose",
+          "cn": "单腿连裤袜"
+        },
+        {
+          "en": "purple pantyhose",
+          "cn": "紫连裤袜"
+        },
+        {
+          "en": "red pantyhose",
+          "cn": "红连裤袜"
+        },
+        {
+          "en": "fishnet legwear",
+          "cn": "网眼腿装"
+        },
+        {
+          "en": "bandaged leg",
+          "cn": "绷带腿"
+        },
+        {
+          "en": "bandaid on leg",
+          "cn": "腿创可贴"
+        },
+        {
+          "en": "mechanical legs",
+          "cn": "机械腿"
+        },
+        {
+          "en": "leg belt",
+          "cn": "腿带"
+        },
+        {
+          "en": "leg tattoo",
+          "cn": "腿纹身"
+        },
+        {
+          "en": "bound legs",
+          "cn": "捆腿"
+        },
+        {
+          "en": "leg lock",
+          "cn": "锁腿"
+        },
+        {
+          "en": "panties under pantyhose",
+          "cn": "内裤在连裤袜内"
+        },
+        {
+          "en": "panty & stocking with garterbelt",
+          "cn": "吊带袜内裤"
+        },
+        {
+          "en": "thighhighs over pantyhose",
+          "cn": "大腿袜覆连裤袜"
+        },
+        {
+          "en": "socks over thighhighs",
+          "cn": "袜子覆大腿袜"
+        },
+        {
+          "en": "panties over pantyhose",
+          "cn": "内裤覆连裤袜"
+        },
+        {
+          "en": "pantyhose under swimsuit",
+          "cn": "泳衣下连裤袜"
+        },
+        {
+          "en": "black garter belt",
+          "cn": "黑吊袜腰带"
+        },
+        {
+          "en": "neck garter",
+          "cn": "颈吊带"
+        },
+        {
+          "en": "white garter straps",
+          "cn": "白吊袜带"
+        },
+        {
+          "en": "black garter straps",
+          "cn": "黑吊袜带"
+        },
+        {
+          "en": "ankle garter",
+          "cn": "脚踝吊带"
+        },
+        {
+          "en": "no legwear",
+          "cn": "无腿装"
+        },
+        {
+          "en": "black legwear",
+          "cn": "黑腿装"
+        },
+        {
+          "en": "white legwear",
+          "cn": "白腿装"
+        },
+        {
+          "en": "torn legwear",
+          "cn": "破腿装"
+        },
+        {
+          "en": "striped legwear",
+          "cn": "条纹腿装"
+        },
+        {
+          "en": "asymmetrical legwear",
+          "cn": "不对称腿装"
+        },
+        {
+          "en": "brown legwear",
+          "cn": "棕腿装"
+        },
+        {
+          "en": "uneven legwear",
+          "cn": "不均腿装"
+        },
+        {
+          "en": "toeless legwear",
+          "cn": "露脚趾腿装"
+        },
+        {
+          "en": "print legwear",
+          "cn": "印花腿装"
+        },
+        {
+          "en": "lace-trimmed legwear",
+          "cn": "蕾丝边腿装"
+        },
+        {
+          "en": "red legwear",
+          "cn": "红腿装"
+        },
+        {
+          "en": "mismatched legwear",
+          "cn": "不搭腿装"
+        },
+        {
+          "en": "legwear under shorts",
+          "cn": "短裤下腿装"
+        },
+        {
+          "en": "purple legwear",
+          "cn": "紫腿装"
+        },
+        {
+          "en": "grey legwear",
+          "cn": "灰腿装"
+        },
+        {
+          "en": "blue legwear",
+          "cn": "蓝腿装"
+        },
+        {
+          "en": "pink legwear",
+          "cn": "粉腿装"
+        },
+        {
+          "en": "argyle legwear",
+          "cn": "菱格腿装"
+        },
+        {
+          "en": "ribbon-trimmed legwear",
+          "cn": "缎带边腿装"
+        },
+        {
+          "en": "american flag legwear",
+          "cn": "美国旗腿装"
+        },
+        {
+          "en": "green legwear",
+          "cn": "绿腿装"
+        },
+        {
+          "en": "vertical-striped legwear",
+          "cn": "竖纹腿装"
+        },
+        {
+          "en": "frilled legwear",
+          "cn": "蕾丝边腿装"
+        },
+        {
+          "en": "stirrup legwear",
+          "cn": "脚镫腿装"
+        },
+        {
+          "en": "alternate legwear",
+          "cn": "换腿装"
+        },
+        {
+          "en": "seamed legwear",
+          "cn": "带缝腿装"
+        },
+        {
+          "en": "yellow legwear",
+          "cn": "黄腿装"
+        },
+        {
+          "en": "multicolored legwear",
+          "cn": "多彩腿装"
+        },
+        {
+          "en": "ribbed legwear",
+          "cn": "罗纹腿装"
+        },
+        {
+          "en": "fur-trimmed legwear",
+          "cn": "毛边腿装"
+        },
+        {
+          "en": "see-through legwear",
+          "cn": "透视腿装"
+        },
+        {
+          "en": "legwear garter",
+          "cn": "腿装吊带"
+        },
+        {
+          "en": "two-tone legwear",
+          "cn": "双色腿装"
+        },
+        {
+          "en": "latex legwear",
+          "cn": "乳胶腿装"
+        },
+        {
+          "en": "vibrator in thighhighs",
+          "cn": "大腿袜振动器"
+        },
+        {
+          "en": "torn pantyhose",
+          "cn": "破连裤袜"
+        }
+      ]
+    },
+    {
+      "id": "shoes",
+      "cn_label": "鞋",
+      "tags": [
+        {
+          "en": "shoes",
+          "cn": "鞋"
+        },
+        {
+          "en": "boots",
+          "cn": "靴"
+        },
+        {
+          "en": "loafers",
+          "cn": "乐福鞋"
+        },
+        {
+          "en": "high heels",
+          "cn": "高跟鞋"
+        },
+        {
+          "en": "cross-laced_footwear",
+          "cn": "交叉绑带鞋"
+        },
+        {
+          "en": "mary_janes",
+          "cn": "玛丽珍鞋"
+        },
+        {
+          "en": "uwabaki",
+          "cn": "上履鞋"
+        },
+        {
+          "en": "slippers",
+          "cn": "拖鞋"
+        },
+        {
+          "en": "knee_boots",
+          "cn": "过膝靴"
+        }
+      ]
+    },
+    {
+      "id": "accessory",
+      "cn_label": "装饰",
+      "tags": [
+        {
+          "en": "halo",
+          "cn": "光环"
+        },
+        {
+          "en": "mini_top_hat",
+          "cn": "迷你礼帽"
+        },
+        {
+          "en": "beret",
+          "cn": "贝雷帽"
+        },
+        {
+          "en": "hood",
+          "cn": "兜帽"
+        },
+        {
+          "en": "nurse cap",
+          "cn": "护士帽"
+        },
+        {
+          "en": "tiara",
+          "cn": "冠冕"
+        },
+        {
+          "en": "oni horns",
+          "cn": "鬼角"
+        },
+        {
+          "en": "demon horns",
+          "cn": "恶魔角"
+        },
+        {
+          "en": "hair ribbon",
+          "cn": "发丝带"
+        },
+        {
+          "en": "flower ribbon",
+          "cn": "花丝带"
+        },
+        {
+          "en": "hairband",
+          "cn": "发箍"
+        },
+        {
+          "en": "hairclip",
+          "cn": "发卡"
+        },
+        {
+          "en": "hair_ribbon",
+          "cn": "发丝带"
+        },
+        {
+          "en": "hair_flower",
+          "cn": "发花"
+        },
+        {
+          "en": "hair_ornament",
+          "cn": "发饰"
+        },
+        {
+          "en": "bowtie",
+          "cn": "领结"
+        },
+        {
+          "en": "hair_bow",
+          "cn": "发蝴蝶结"
+        },
+        {
+          "en": "maid_headdress",
+          "cn": "女仆头饰"
+        },
+        {
+          "en": "bow",
+          "cn": "蝴蝶结"
+        },
+        {
+          "en": "hair ornament",
+          "cn": "发饰"
+        },
+        {
+          "en": "heart hair ornament",
+          "cn": "心形发饰"
+        },
+        {
+          "en": "bandaid hair ornament",
+          "cn": "创可贴发饰"
+        },
+        {
+          "en": "hair bun",
+          "cn": "发髻"
+        },
+        {
+          "en": "cone hair bun",
+          "cn": "锥形发髻"
+        },
+        {
+          "en": "double bun",
+          "cn": "双发髻"
+        },
+        {
+          "en": "semi-rimless eyewear",
+          "cn": "半无框眼镜"
+        },
+        {
+          "en": "sunglasses",
+          "cn": "墨镜"
+        },
+        {
+          "en": "goggles",
+          "cn": "护目镜"
+        },
+        {
+          "en": "eyepatch",
+          "cn": "眼罩"
+        },
+        {
+          "en": "headphones",
+          "cn": "耳机"
+        },
+        {
+          "en": "veil",
+          "cn": "面纱"
+        },
+        {
+          "en": "mouth mask",
+          "cn": "口罩"
+        },
+        {
+          "en": "glasses",
+          "cn": "眼镜"
+        },
+        {
+          "en": "earrings",
+          "cn": "耳环"
+        },
+        {
+          "en": "jewelry",
+          "cn": "珠宝"
+        },
+        {
+          "en": "bell",
+          "cn": "铃铛"
+        },
+        {
+          "en": "ribbon_choker",
+          "cn": "缎带项圈"
+        },
+        {
+          "en": "black choker",
+          "cn": "黑项圈"
+        },
+        {
+          "en": "necklace",
+          "cn": "项链"
+        },
+        {
+          "en": "headphones around neck",
+          "cn": "颈挂耳机"
+        },
+        {
+          "en": "collar",
+          "cn": "项圈"
+        },
+        {
+          "en": "black blindfold",
+          "cn": "黑眼罩"
+        },
+        {
+          "en": "sailor_collar",
+          "cn": "水手领"
+        },
+        {
+          "en": "neckerchief",
+          "cn": "领巾"
+        },
+        {
+          "en": "necktie",
+          "cn": "领带"
+        },
+        {
+          "en": "cross necklace",
+          "cn": "十字项链"
+        },
+        {
+          "en": "pendant",
+          "cn": "吊坠"
+        },
+        {
+          "en": "scarf",
+          "cn": "围巾"
+        },
+        {
+          "en": "armband",
+          "cn": "臂章"
+        },
+        {
+          "en": "armlet",
+          "cn": "臂环"
+        },
+        {
+          "en": "arm strap",
+          "cn": "臂带"
+        },
+        {
+          "en": "elbow gloves",
+          "cn": "肘套手套"
+        },
+        {
+          "en": "half gloves",
+          "cn": "半指手套"
+        },
+        {
+          "en": "fingerless_gloves",
+          "cn": "露指手套"
+        },
+        {
+          "en": "gloves",
+          "cn": "手套"
+        },
+        {
+          "en": "fingerless gloves",
+          "cn": "露指手套"
+        },
+        {
+          "en": "shackles",
+          "cn": "镣铐"
+        },
+        {
+          "en": "cuffs",
+          "cn": "手铐"
+        },
+        {
+          "en": "handcuffs",
+          "cn": "手铐"
+        },
+        {
+          "en": "bracelet",
+          "cn": "手镯"
+        },
+        {
+          "en": "wristwatch",
+          "cn": "手表"
+        },
+        {
+          "en": "wristband",
+          "cn": "腕带"
+        },
+        {
+          "en": "wrist_cuffs",
+          "cn": "腕铐"
+        },
+        {
+          "en": "holding book",
+          "cn": "拿着书"
+        },
+        {
+          "en": "holding sword",
+          "cn": "持剑"
+        },
+        {
+          "en": "tennis racket",
+          "cn": "网球拍"
+        },
+        {
+          "en": "cane",
+          "cn": "手杖"
+        },
+        {
+          "en": "backpack",
+          "cn": "背包"
+        },
+        {
+          "en": "school bag",
+          "cn": "书包"
+        },
+        {
+          "en": "satchel",
+          "cn": "斜挎包"
+        },
+        {
+          "en": "chains",
+          "cn": "锁链"
+        },
+        {
+          "en": "smartphone",
+          "cn": "智能手机"
+        },
+        {
+          "en": "bandaid",
+          "cn": "创可贴"
+        }
+      ]
+    },
+    {
+      "id": "pose",
+      "cn_label": "动作",
+      "tags": [
+        {
+          "en": "head tilt",
+          "cn": "歪头"
+        },
+        {
+          "en": "turning around",
+          "cn": "转身"
+        },
+        {
+          "en": "looking back",
+          "cn": "回头看"
+        },
+        {
+          "en": "looking down",
+          "cn": "俯视"
+        },
+        {
+          "en": "looking up",
+          "cn": "仰视"
+        },
+        {
+          "en": "smelling",
+          "cn": "闻味"
+        },
+        {
+          "en": "hand_to_mouth",
+          "cn": "手贴嘴"
+        },
+        {
+          "en": "arm at side",
+          "cn": "手垂侧"
+        },
+        {
+          "en": "arms behind head",
+          "cn": "双手抱头后"
+        },
+        {
+          "en": "arms behind back",
+          "cn": "双手背后"
+        },
+        {
+          "en": "hand on own chest",
+          "cn": "手贴胸"
+        },
+        {
+          "en": "holding",
+          "cn": "拿着"
+        },
+        {
+          "en": "grabbing",
+          "cn": "抓"
+        },
+        {
+          "en": "leg hold",
+          "cn": "抱腿"
+        },
+        {
+          "en": "armpits",
+          "cn": "腋下"
+        },
+        {
+          "en": "stretch",
+          "cn": "伸展"
+        },
+        {
+          "en": "hands up",
+          "cn": "举手"
+        },
+        {
+          "en": "arms up",
+          "cn": "举起双臂"
+        },
+        {
+          "en": "hands_on_hips",
+          "cn": "手叉腰"
+        },
+        {
+          "en": "hand_on_hip",
+          "cn": "手叉腰"
+        },
+        {
+          "en": "hand on another's hip",
+          "cn": "手搭他腰"
+        },
+        {
+          "en": "hand on hip",
+          "cn": "手叉腰"
+        },
+        {
+          "en": "arms_crossed",
+          "cn": "抱臂"
+        },
+        {
+          "en": "fingersmile",
+          "cn": "手指微笑"
+        },
+        {
+          "en": "hair_pull",
+          "cn": "拉发"
+        },
+        {
+          "en": "hair scrunchie",
+          "cn": "发圈"
+        },
+        {
+          "en": "w",
+          "cn": "W手势"
+        },
+        {
+          "en": "v",
+          "cn": "比V"
+        },
+        {
+          "en": "peace symbol",
+          "cn": "胜利手势"
+        },
+        {
+          "en": "thumbs_up",
+          "cn": "竖拇指"
+        },
+        {
+          "en": "middle_finger",
+          "cn": "竖中指"
+        },
+        {
+          "en": "cat_pose",
+          "cn": "猫手势"
+        },
+        {
+          "en": "shushing",
+          "cn": "嘘"
+        },
+        {
+          "en": "waving",
+          "cn": "挥手"
+        },
+        {
+          "en": "salute",
+          "cn": "敬礼"
+        },
+        {
+          "en": "spread_arms",
+          "cn": "张臂"
+        },
+        {
+          "en": "seiza",
+          "cn": "跪坐"
+        },
+        {
+          "en": "sitting on",
+          "cn": "坐在"
+        },
+        {
+          "en": "sitting",
+          "cn": "坐姿"
+        },
+        {
+          "en": "lying",
+          "cn": "躺姿"
+        },
+        {
+          "en": "squatting",
+          "cn": "蹲姿"
+        },
+        {
+          "en": "finger_gun",
+          "cn": "手指枪"
+        },
+        {
+          "en": "on_stomach",
+          "cn": "俯卧"
+        },
+        {
+          "en": "against wall",
+          "cn": "靠墙"
+        },
+        {
+          "en": "leaning forward",
+          "cn": "前倾"
+        },
+        {
+          "en": "leg_lift",
+          "cn": "抬腿"
+        },
+        {
+          "en": "fetal_position",
+          "cn": "胎儿姿"
+        },
+        {
+          "en": "crossed_legs",
+          "cn": "翘二郎腿"
+        },
+        {
+          "en": "spread legs",
+          "cn": "张腿"
+        },
+        {
+          "en": "wariza/w-sitting",
+          "cn": "W坐姿"
+        },
+        {
+          "en": "yokozuwari",
+          "cn": "侧坐"
+        },
+        {
+          "en": "indian_style",
+          "cn": "盘腿坐"
+        },
+        {
+          "en": "leg_hug",
+          "cn": "抱腿"
+        },
+        {
+          "en": "legs_up",
+          "cn": "抬腿向上"
+        },
+        {
+          "en": "walking",
+          "cn": "走路"
+        },
+        {
+          "en": "running",
+          "cn": "跑步"
+        },
+        {
+          "en": "straddle",
+          "cn": "跨坐"
+        },
+        {
+          "en": "kneeling",
+          "cn": "跪姿"
+        },
+        {
+          "en": "smoking",
+          "cn": "吸烟"
+        },
+        {
+          "en": "arm_support",
+          "cn": "手撑地"
+        },
+        {
+          "en": "caramelldansen",
+          "cn": "焦糖舞"
+        },
+        {
+          "en": "princess_carry",
+          "cn": "公主抱"
+        },
+        {
+          "en": "sleeping",
+          "cn": "睡觉"
+        },
+        {
+          "en": "lap_pillow",
+          "cn": "膝枕"
+        },
+        {
+          "en": "hug",
+          "cn": "拥抱"
+        },
+        {
+          "en": "eye_contact",
+          "cn": "对视"
+        },
+        {
+          "en": "symmetrical_hand_pose",
+          "cn": "对称手势"
+        },
+        {
+          "en": "back-to-back",
+          "cn": "背靠背"
+        },
+        {
+          "en": "fetal position",
+          "cn": "胎儿姿"
+        },
+        {
+          "en": "straddling",
+          "cn": "跨坐"
+        },
+        {
+          "en": "arched_back",
+          "cn": "弓背"
+        },
+        {
+          "en": "bent_over",
+          "cn": "弯身"
+        },
+        {
+          "en": "top-down_bottom-up",
+          "cn": "头下臀上"
+        },
+        {
+          "en": "upside-down",
+          "cn": "倒立"
+        },
+        {
+          "en": "fighting_stance",
+          "cn": "战斗姿"
+        },
+        {
+          "en": "bathing",
+          "cn": "沐浴"
+        },
+        {
+          "en": "mimikaki",
+          "cn": "掏耳"
+        },
+        {
+          "en": "holding_hands",
+          "cn": "牵手"
+        },
+        {
+          "en": "hair blowing",
+          "cn": "头发飘"
+        },
+        {
+          "en": "adjusting hair",
+          "cn": "整理头发"
+        },
+        {
+          "en": "hand in own hair",
+          "cn": "手插己发"
+        },
+        {
+          "en": "holding hair",
+          "cn": "拉着发"
+        },
+        {
+          "en": "tying hair",
+          "cn": "扎发"
+        },
+        {
+          "en": "grabbing another's hair",
+          "cn": "抓他人发"
+        },
+        {
+          "en": "hands in hair",
+          "cn": "手插发"
+        },
+        {
+          "en": "brushing hair",
+          "cn": "梳发"
+        },
+        {
+          "en": "washing hair",
+          "cn": "洗发"
+        },
+        {
+          "en": "all_fours",
+          "cn": "四肢着地"
+        },
+        {
+          "en": "symmetrical_docking",
+          "cn": "胸贴胸"
+        },
+        {
+          "en": "undressing",
+          "cn": "脱衣"
+        },
+        {
+          "en": "skirt lift",
+          "cn": "撩裙"
+        },
+        {
+          "en": "shirt lift",
+          "cn": "撩衣"
+        },
+        {
+          "en": "adjusting_thighhigh",
+          "cn": "整理大腿袜"
+        }
+      ]
+    },
+    {
+      "id": "r18",
+      "cn_label": "R18",
+      "tags": [
+        {
+          "en": "tentacle",
+          "cn": "触手"
+        },
+        {
+          "en": "hairjob",
+          "cn": "发交"
+        },
+        {
+          "en": "oral/fellatio",
+          "cn": "口交"
+        },
+        {
+          "en": "deepthroat",
+          "cn": "深喉"
+        },
+        {
+          "en": "gokkun",
+          "cn": "咽精"
+        },
+        {
+          "en": "gag",
+          "cn": "口塞"
+        },
+        {
+          "en": "ballgag",
+          "cn": "球口塞"
+        },
+        {
+          "en": "bitgag",
+          "cn": "齿形口塞"
+        },
+        {
+          "en": "ring_gag",
+          "cn": "环形口塞"
+        },
+        {
+          "en": "cleave_gag",
+          "cn": "布条口塞"
+        },
+        {
+          "en": "panty_gag",
+          "cn": "内裤口塞"
+        },
+        {
+          "en": "tapegag",
+          "cn": "胶带封口"
+        },
+        {
+          "en": "facial",
+          "cn": "颜射"
+        },
+        {
+          "en": "leash",
+          "cn": "牵绳"
+        },
+        {
+          "en": "handjob",
+          "cn": "手交"
+        },
+        {
+          "en": "groping",
+          "cn": "摸胸"
+        },
+        {
+          "en": "areolae",
+          "cn": "乳晕"
+        },
+        {
+          "en": "nipples",
+          "cn": "乳头"
+        },
+        {
+          "en": "puffy_nipples",
+          "cn": "凸乳头"
+        },
+        {
+          "en": "small_nipples",
+          "cn": "小乳头"
+        },
+        {
+          "en": "nipple_pull",
+          "cn": "拉乳头"
+        },
+        {
+          "en": "nipple_torture",
+          "cn": "虐乳头"
+        },
+        {
+          "en": "nipple_tweak",
+          "cn": "拧乳头"
+        },
+        {
+          "en": "nipple_piercing",
+          "cn": "乳头穿环"
+        },
+        {
+          "en": "breast_grab",
+          "cn": "抓胸"
+        },
+        {
+          "en": "lactation",
+          "cn": "泌乳"
+        },
+        {
+          "en": "breast_sucking/nipple_suck",
+          "cn": "吸胸"
+        },
+        {
+          "en": "breast_feeding",
+          "cn": "哺乳"
+        },
+        {
+          "en": "paizuri",
+          "cn": "乳交"
+        },
+        {
+          "en": "multiple_paizuri",
+          "cn": "多人乳交"
+        },
+        {
+          "en": "breast_smother",
+          "cn": "胸部闷"
+        },
+        {
+          "en": "piercing",
+          "cn": "穿环"
+        },
+        {
+          "en": "navel_piercing",
+          "cn": "肚脐穿环"
+        },
+        {
+          "en": "thigh_sex",
+          "cn": "腿交"
+        },
+        {
+          "en": "footjob",
+          "cn": "足交"
+        },
+        {
+          "en": "mound_of_venus",
+          "cn": "耻丘"
+        },
+        {
+          "en": "wide_hips",
+          "cn": "宽臀"
+        },
+        {
+          "en": "masturbation",
+          "cn": "自慰"
+        },
+        {
+          "en": "clothed_masturbation",
+          "cn": "带衣自慰"
+        },
+        {
+          "en": "penis",
+          "cn": "阴茎"
+        },
+        {
+          "en": "testicles",
+          "cn": "睾丸"
+        },
+        {
+          "en": "ejaculation",
+          "cn": "射精"
+        },
+        {
+          "en": "cum",
+          "cn": "精液"
+        },
+        {
+          "en": "cum_inside",
+          "cn": "内射"
+        },
+        {
+          "en": "cum_on_breast",
+          "cn": "胸射"
+        },
+        {
+          "en": "cum_on_hair",
+          "cn": "射发"
+        },
+        {
+          "en": "cum_on_food",
+          "cn": "射食物"
+        },
+        {
+          "en": "tamakeri",
+          "cn": "踢蛋"
+        },
+        {
+          "en": "pussy/vaginal",
+          "cn": "阴道"
+        },
+        {
+          "en": "pubic_hair",
+          "cn": "耻毛"
+        },
+        {
+          "en": "shaved_pussy",
+          "cn": "剃毛"
+        },
+        {
+          "en": "no_pussy",
+          "cn": "无下体"
+        },
+        {
+          "en": "clitoris",
+          "cn": "阴蒂"
+        },
+        {
+          "en": "fat_mons",
+          "cn": "胖耻丘"
+        },
+        {
+          "en": "cameltoe",
+          "cn": "骆驼脚"
+        },
+        {
+          "en": "pussy_juice",
+          "cn": "爱液"
+        },
+        {
+          "en": "female_ejaculation",
+          "cn": "女潮吹"
+        },
+        {
+          "en": "grinding",
+          "cn": "摩擦"
+        },
+        {
+          "en": "crotch_rub",
+          "cn": "骑木"
+        },
+        {
+          "en": "facesitting",
+          "cn": "坐脸"
+        },
+        {
+          "en": "cervix",
+          "cn": "子宫颈"
+        },
+        {
+          "en": "cunnilingus",
+          "cn": "舔阴"
+        },
+        {
+          "en": "insertion",
+          "cn": "插入"
+        },
+        {
+          "en": "anal_insertion",
+          "cn": "肛插"
+        },
+        {
+          "en": "fruit_insertion",
+          "cn": "水果插入"
+        },
+        {
+          "en": "large_insertion",
+          "cn": "大物插入"
+        },
+        {
+          "en": "penetration",
+          "cn": "贯穿"
+        },
+        {
+          "en": "fisting",
+          "cn": "拳交"
+        },
+        {
+          "en": "fingering",
+          "cn": "指交"
+        },
+        {
+          "en": "multiple_insertions",
+          "cn": "多重插入"
+        },
+        {
+          "en": "double_penetration",
+          "cn": "双插"
+        },
+        {
+          "en": "triple_penetration",
+          "cn": "三插"
+        },
+        {
+          "en": "double_vaginal",
+          "cn": "双阴道"
+        },
+        {
+          "en": "peeing",
+          "cn": "小便"
+        },
+        {
+          "en": "have_to_pee",
+          "cn": "想小便"
+        },
+        {
+          "en": "ass",
+          "cn": "臀"
+        },
+        {
+          "en": "huge_ass",
+          "cn": "巨臀"
+        },
+        {
+          "en": "spread_ass",
+          "cn": "分臀"
+        },
+        {
+          "en": "spanked",
+          "cn": "被打屁股"
+        },
+        {
+          "en": "anus",
+          "cn": "肛门"
+        },
+        {
+          "en": "anal",
+          "cn": "肛交"
+        },
+        {
+          "en": "double_anal",
+          "cn": "双肛"
+        },
+        {
+          "en": "anal_fingering",
+          "cn": "肛指"
+        },
+        {
+          "en": "anal_fisting",
+          "cn": "肛拳"
+        },
+        {
+          "en": "anilingus",
+          "cn": "舔肛"
+        },
+        {
+          "en": "enema",
+          "cn": "灌肠"
+        },
+        {
+          "en": "stomach_bulge",
+          "cn": "腹部凸"
+        },
+        {
+          "en": "x-ray/cross-section/internal_cumshot",
+          "cn": "透视·内射"
+        },
+        {
+          "en": "wakamezake",
+          "cn": "海带酒"
+        },
+        {
+          "en": "buttjob",
+          "cn": "臀交"
+        },
+        {
+          "en": "public",
+          "cn": "公共"
+        },
+        {
+          "en": "humiliation",
+          "cn": "羞辱"
+        },
+        {
+          "en": "bra_lift",
+          "cn": "掀胸罩"
+        },
+        {
+          "en": "panties_around_one_leg",
+          "cn": "内裤挂单腿"
+        },
+        {
+          "en": "walk-in",
+          "cn": "闯入"
+        },
+        {
+          "en": "body_writing",
+          "cn": "身体书写"
+        },
+        {
+          "en": "caught",
+          "cn": "抓现行"
+        },
+        {
+          "en": "tally",
+          "cn": "计数"
+        },
+        {
+          "en": "futanari",
+          "cn": "扶他"
+        },
+        {
+          "en": "incest",
+          "cn": "乱伦"
+        },
+        {
+          "en": "twincest",
+          "cn": "双胞胎乱伦"
+        },
+        {
+          "en": "pegging",
+          "cn": "女穿戴假阴"
+        },
+        {
+          "en": "femdom",
+          "cn": "女王"
+        },
+        {
+          "en": "ganguro",
+          "cn": "黑肤辣妹"
+        },
+        {
+          "en": "bestiality",
+          "cn": "兽交"
+        },
+        {
+          "en": "gangbang",
+          "cn": "群交"
+        },
+        {
+          "en": "hreesome",
+          "cn": "三人行"
+        },
+        {
+          "en": "group_sex/orgy/teamwork",
+          "cn": "群交"
+        },
+        {
+          "en": "tribadism",
+          "cn": "女同摩擦"
+        },
+        {
+          "en": "molestation",
+          "cn": "猥亵"
+        },
+        {
+          "en": "voyeurism",
+          "cn": "偷窥"
+        },
+        {
+          "en": "exhibitionism",
+          "cn": "露出癖"
+        },
+        {
+          "en": "rape",
+          "cn": "强制"
+        },
+        {
+          "en": "about_to_be_raped",
+          "cn": "即将被侵"
+        },
+        {
+          "en": "sex",
+          "cn": "性爱"
+        },
+        {
+          "en": "clothed_sex",
+          "cn": "带衣性爱"
+        },
+        {
+          "en": "happy_sex",
+          "cn": "快乐性爱"
+        },
+        {
+          "en": "underwater_sex",
+          "cn": "水中性爱"
+        },
+        {
+          "en": "spitroast",
+          "cn": "前后夹击"
+        },
+        {
+          "en": "cock_in_thighhigh",
+          "cn": "大腿袜夹"
+        },
+        {
+          "en": "69",
+          "cn": "69式"
+        },
+        {
+          "en": "doggystyle",
+          "cn": "后入"
+        },
+        {
+          "en": "leg_lock/upright_straddle",
+          "cn": "锁腿立跨"
+        },
+        {
+          "en": "missionary",
+          "cn": "传教士"
+        },
+        {
+          "en": "girl_on_top",
+          "cn": "女上"
+        },
+        {
+          "en": "cowgirl_position",
+          "cn": "骑乘"
+        },
+        {
+          "en": "reverse_cowgirl",
+          "cn": "反向骑乘"
+        },
+        {
+          "en": "virgin",
+          "cn": "处女"
+        },
+        {
+          "en": "slave",
+          "cn": "奴隶"
+        },
+        {
+          "en": "shibari",
+          "cn": "绑缚"
+        },
+        {
+          "en": "bondage",
+          "cn": "束缚"
+        },
+        {
+          "en": "bdsm",
+          "cn": "BDSM"
+        },
+        {
+          "en": "pillory/stocks",
+          "cn": "枷"
+        },
+        {
+          "en": "rope",
+          "cn": "绳"
+        },
+        {
+          "en": "bound_arms",
+          "cn": "绑臂"
+        },
+        {
+          "en": "bound_wrists",
+          "cn": "绑腕"
+        },
+        {
+          "en": "crotch_rope",
+          "cn": "胯绳"
+        },
+        {
+          "en": "frogtie",
+          "cn": "蛙绑"
+        },
+        {
+          "en": "suspension",
+          "cn": "悬吊"
+        },
+        {
+          "en": "spreader_bar",
+          "cn": "张开杆"
+        },
+        {
+          "en": "wooden_horse",
+          "cn": "木马"
+        },
+        {
+          "en": "anal_beads",
+          "cn": "肛珠"
+        },
+        {
+          "en": "dildo",
+          "cn": "假阳具"
+        },
+        {
+          "en": "cock_ring",
+          "cn": "阴茎环"
+        },
+        {
+          "en": "egg_vibrator",
+          "cn": "跳蛋"
+        },
+        {
+          "en": "artificial_vagina",
+          "cn": "人工阴道"
+        },
+        {
+          "en": "hitachi_magic_wand",
+          "cn": "魔法棒"
+        },
+        {
+          "en": "hogtie",
+          "cn": "四肢反绑"
+        },
+        {
+          "en": "double_dildo",
+          "cn": "双头假阳具"
+        },
+        {
+          "en": "vibrator",
+          "cn": "振动器"
+        },
+        {
+          "en": "vibrator_in_thighhighs",
+          "cn": "大腿袜振动器"
+        },
+        {
+          "en": "nyotaimori",
+          "cn": "人体盛"
+        },
+        {
+          "en": "vore",
+          "cn": "吞噬"
+        },
+        {
+          "en": "amputee",
+          "cn": "残肢"
+        },
+        {
+          "en": "transformation",
+          "cn": "变形"
+        },
+        {
+          "en": "mind_control",
+          "cn": "精神控制"
+        },
+        {
+          "en": "censored",
+          "cn": "打码"
+        },
+        {
+          "en": "uncensored",
+          "cn": "无码"
+        },
+        {
+          "en": "asian",
+          "cn": "亚裔"
+        },
+        {
+          "en": "faceless_male",
+          "cn": "无脸男"
+        },
+        {
+          "en": "blood",
+          "cn": "血"
+        },
+        {
+          "en": "surrounded",
+          "cn": "被包围"
+        },
+        {
+          "en": "multiple others",
+          "cn": "多人围观"
+        },
+        {
+          "en": "audience",
+          "cn": "观众"
+        },
+        {
+          "en": "background characters",
+          "cn": "背景人物"
+        },
+        {
+          "en": "crowd",
+          "cn": "人群"
+        },
+        {
+          "en": "public humiliation",
+          "cn": "公开羞辱"
+        },
+        {
+          "en": "partially unbuttoned",
+          "cn": "半解扣"
+        },
+        {
+          "en": "show foot",
+          "cn": "展示脚"
+        },
+        {
+          "en": "pubic tattoo on underbelly",
+          "cn": "下腹耻骨纹身"
+        },
+        {
+          "en": "spread pussy",
+          "cn": "张开阴部"
+        },
+        {
+          "en": "ass_visible_through_thighs",
+          "cn": "大腿间见臀"
+        },
+        {
+          "en": "naughty_face",
+          "cn": "淫荡脸"
+        },
+        {
+          "en": "endured_face",
+          "cn": "忍耐脸"
+        },
+        {
+          "en": "ahegao",
+          "cn": "阿黑颜"
+        },
+        {
+          "en": "blood on face",
+          "cn": "脸上血"
+        },
+        {
+          "en": "saliva",
+          "cn": "口水"
+        },
+        {
+          "en": "breasts out",
+          "cn": "露乳"
+        },
+        {
+          "en": "one breast out",
+          "cn": "单边露乳"
+        },
+        {
+          "en": "no bra",
+          "cn": "无胸罩"
+        },
+        {
+          "en": "bra",
+          "cn": "胸罩"
+        },
+        {
+          "en": "victorian",
+          "cn": "维多利亚风"
+        },
+        {
+          "en": "frilled bra",
+          "cn": "蕾丝胸罩"
+        },
+        {
+          "en": "sexy lingerie",
+          "cn": "性感内衣"
+        },
+        {
+          "en": "transparent underwear",
+          "cn": "透明内衣"
+        },
+        {
+          "en": "bustier",
+          "cn": "无带胸衣"
+        },
+        {
+          "en": "chemise",
+          "cn": "衬裙"
+        },
+        {
+          "en": "underwear",
+          "cn": "内衣"
+        },
+        {
+          "en": "panties",
+          "cn": "内裤"
+        },
+        {
+          "en": "striped_panties",
+          "cn": "条纹内裤"
+        },
+        {
+          "en": "no_panties",
+          "cn": "无内裤"
+        },
+        {
+          "en": "lowleg_panties/low_leg_panties",
+          "cn": "低腰内裤"
+        },
+        {
+          "en": "side-tie_panties",
+          "cn": "侧绑内裤"
+        },
+        {
+          "en": "string_panties",
+          "cn": "丁字内裤"
+        },
+        {
+          "en": "sarashi",
+          "cn": "布带"
+        },
+        {
+          "en": "thong",
+          "cn": "丁字裤"
+        },
+        {
+          "en": "fundoshi",
+          "cn": "褌"
+        },
+        {
+          "en": "lingerie",
+          "cn": "内衣"
+        },
+        {
+          "en": "vibrator in thighhighs",
+          "cn": "大腿袜振动器"
+        },
+        {
+          "en": "torn pantyhose",
+          "cn": "破连裤袜"
+        },
+        {
+          "en": "all_fours",
+          "cn": "四肢着地"
+        },
+        {
+          "en": "symmetrical_docking",
+          "cn": "胸贴胸"
+        },
+        {
+          "en": "undressing",
+          "cn": "脱衣"
+        },
+        {
+          "en": "skirt lift",
+          "cn": "撩裙"
+        },
+        {
+          "en": "shirt lift",
+          "cn": "撩衣"
+        },
+        {
+          "en": "adjusting_thighhigh",
+          "cn": "整理大腿袜"
+        }
+      ]
+    }
+  ]
+}

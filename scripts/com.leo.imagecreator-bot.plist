@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.leo.imagecreator-bot</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/leo/Documents/ComfyUI/.venv/bin/python3</string>
+    <string>/Users/leo/Agents/imagecreator-workspace/bin/tg_bot.py</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/leo/Agents/imagecreator-workspace</string>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>KeepAlive</key>
+  <true/>
+
+  <key>ThrottleInterval</key>
+  <integer>10</integer>
+
+  <key>StandardOutPath</key>
+  <string>/Users/leo/Agents/imagecreator-workspace/tmp/imagecreator-bot.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/leo/Agents/imagecreator-workspace/tmp/imagecreator-bot.err.log</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>HOME</key>
+    <string>/Users/leo</string>
+    <key>PATH</key>
+    <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+</dict>
+</plist>

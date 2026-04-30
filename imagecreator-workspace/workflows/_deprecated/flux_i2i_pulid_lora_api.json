@@ -1,0 +1,186 @@
+{
+  "_comment": "实验版：PuLID身份锁定 + Depth ControlNet姿势保持 + IP-Adapter风格参考 + LoRA风格注入 的i2i保角色重绘。中度参数：PuLID weight=0.80, Depth CN strength=0.40, IP-Adapter scale=0.50, i2i_strength=0.60。链路：UNET → LoRA → PuLID → IP-Adapter → XlabsSampler。用同一张原图同时作为 face reference 和 i2i source。",
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "flux1-dev.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "DualCLIPLoader",
+    "inputs": {
+      "clip_name1": "t5xxl_fp8_e4m3fn.safetensors",
+      "clip_name2": "clip_l.safetensors",
+      "type": "flux"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "ae.safetensors"
+    }
+  },
+  "17": {
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": { "title": "LoRA 风格注入" },
+    "inputs": {
+      "model": ["1", 0],
+      "lora_name": "手办制造.safetensors",
+      "strength_model": 0.85
+    }
+  },
+  "10": {
+    "class_type": "PulidFluxModelLoader",
+    "_meta": { "title": "PuLID Model" },
+    "inputs": {
+      "pulid_file": "pulid_flux_v0.9.1.safetensors"
+    }
+  },
+  "11": {
+    "class_type": "PulidFluxInsightFaceLoader",
+    "_meta": { "title": "PuLID InsightFace" },
+    "inputs": {
+      "provider": "CPU"
+    }
+  },
+  "12": {
+    "class_type": "PulidFluxEvaClipLoader",
+    "_meta": { "title": "PuLID EVA-CLIP" },
+    "inputs": {}
+  },
+  "21": {
+    "class_type": "ApplyPulidFlux",
+    "_meta": { "title": "PuLID 身份锁定 (face lock)" },
+    "inputs": {
+      "model": ["17", 0],
+      "pulid_flux": ["10", 0],
+      "eva_clip": ["12", 0],
+      "face_analysis": ["11", 0],
+      "image": ["7", 0],
+      "weight": 0.80,
+      "start_at": 0.0,
+      "end_at": 1.0
+    }
+  },
+  "4": {
+    "class_type": "LoadFluxIPAdapter",
+    "_meta": { "title": "IP-Adapter 风格参考" },
+    "inputs": {
+      "ipadatper": "ip_adapter.safetensors",
+      "clip_vision": "clip_vision_l.safetensors",
+      "provider": "CPU"
+    }
+  },
+  "5": {
+    "class_type": "LoadFluxControlNet",
+    "_meta": { "title": "Depth ControlNet 姿势保持" },
+    "inputs": {
+      "model_name": "flux-dev",
+      "controlnet_path": "flux-depth-controlnet-v3.safetensors"
+    }
+  },
+  "6": {
+    "class_type": "LoadImage",
+    "_meta": { "title": "原图（同时用于 face ref + i2i source + depth + style ref）" },
+    "inputs": {
+      "image": "input.jpg"
+    }
+  },
+  "7": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": ["6", 0],
+      "upscale_method": "lanczos",
+      "width": 1024,
+      "height": 1024,
+      "crop": "center"
+    }
+  },
+  "8": {
+    "class_type": "ApplyFluxIPAdapter",
+    "_meta": { "title": "IP-Adapter 应用（风格层）" },
+    "inputs": {
+      "model": ["21", 0],
+      "ip_adapter_flux": ["4", 0],
+      "image": ["7", 0],
+      "ip_scale": 0.50
+    }
+  },
+  "9": {
+    "class_type": "DepthAnythingV2Preprocessor",
+    "inputs": {
+      "image": ["7", 0],
+      "ckpt_name": "depth_anything_v2_vitl.pth",
+      "resolution": 1024
+    }
+  },
+  "10b": {
+    "class_type": "ApplyFluxControlNet",
+    "_meta": { "title": "Depth ControlNet 应用（姿势层）" },
+    "inputs": {
+      "controlnet": ["5", 0],
+      "image": ["9", 0],
+      "strength": 0.40
+    }
+  },
+  "11b": {
+    "class_type": "CLIPTextEncodeFlux",
+    "_meta": { "title": "正向提示词" },
+    "inputs": {
+      "clip": ["2", 0],
+      "clip_l": "same character, same face, same hair color, same hairstyle, beautiful, high quality, detailed, masterpiece",
+      "t5xxl": "same character, same face, same hair color, same hairstyle, beautiful, high quality, detailed, masterpiece",
+      "guidance": 3.5
+    }
+  },
+  "12b": {
+    "class_type": "CLIPTextEncodeFlux",
+    "_meta": { "title": "负向提示词" },
+    "inputs": {
+      "clip": ["2", 0],
+      "clip_l": "NEGATIVE: blurry, bad anatomy, deformed, watermark, low quality, ugly, different face, different hair",
+      "t5xxl": "NEGATIVE: blurry, bad anatomy, deformed, watermark, low quality, ugly, different face, different hair",
+      "guidance": 3.5
+    }
+  },
+  "18": {
+    "class_type": "VAEEncode",
+    "_meta": { "title": "原图编码为 latent（i2i 起点）" },
+    "inputs": {
+      "pixels": ["7", 0],
+      "vae": ["3", 0]
+    }
+  },
+  "14": {
+    "class_type": "XlabsSampler",
+    "_meta": { "title": "采样器（中度：i2i_strength=0.60）" },
+    "inputs": {
+      "model": ["8", 0],
+      "conditioning": ["11b", 0],
+      "neg_conditioning": ["12b", 0],
+      "noise_seed": 42,
+      "steps": 28,
+      "timestep_to_start_cfg": 1,
+      "true_gs": 3.5,
+      "image_to_image_strength": 0.60,
+      "denoise_strength": 1.0,
+      "latent_image": ["18", 0],
+      "controlnet_condition": ["10b", 0]
+    }
+  },
+  "15": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": ["14", 0],
+      "vae": ["3", 0]
+    }
+  },
+  "16": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": ["15", 0],
+      "filename_prefix": "flux_i2i_pulid_lora"
+    }
+  }
+}

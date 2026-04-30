@@ -1,0 +1,47 @@
+# 敏感配置
+*.env
+.env.local
+.env.*.local
+auth.json
+auth.lock
+
+# 运行时数据
+sessions/
+logs/
+cache/
+tmp/
+inbox/
+outbox/
+models_dev_cache.json
+state.db*
+gateway.*
+channel_directory.json
+gateway_state.json
+gateway.pid
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 备份文件
+*.bak
+*.backup
+.bak-*/

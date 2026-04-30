@@ -1,0 +1,15 @@
+# Imagecreator Hermes Profile — Configuration
+# This profile wraps the existing standalone tg_bot.py process.
+# Hermes gateway is NOT used for Telegram transport — imagecreator runs its own polling loop.
+
+# Model: inherit from default profile
+# Imagecreator does not currently use LLM features directly.
+
+# Terminal backend: local
+terminal:
+  backend: local
+  cwd: "/Users/leo/Agents/imagecreator-workspace"
+  timeout: 180
+
+# No Telegram gateway config — imagecreator manages its own bot polling
+# telegram: (intentionally absent)

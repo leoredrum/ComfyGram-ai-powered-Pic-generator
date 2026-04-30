@@ -1,0 +1,149 @@
+{
+  "workflows": {
+    "t2i": {
+      "workflow_key": "t2i",
+      "display_name": "文生图 (Text to Image)",
+      "json_path": "workflows/flux_t2i_api.json",
+      "model": "Flux Dev",
+      "required_inputs": [
+        "prompt"
+      ],
+      "optional_inputs": [
+        "seed",
+        "width",
+        "height",
+        "steps"
+      ],
+      "output_dir": "media/output",
+      "output_prefix": "flux_t2i",
+      "status": "stable"
+    },
+    "i2i": {
+      "workflow_key": "i2i",
+      "display_name": "图生图 (Image to Image)",
+      "json_path": "workflows/flux_i2i_api.json",
+      "model": "Flux Dev",
+      "required_inputs": [
+        "image_path",
+        "prompt"
+      ],
+      "optional_inputs": [
+        "denoise",
+        "seed",
+        "steps"
+      ],
+      "defaults": {
+        "denoise": 0.75,
+        "steps": 20
+      },
+      "output_dir": "media/output",
+      "output_prefix": "flux_i2i",
+      "status": "stable"
+    },
+    "i2v": {
+      "workflow_key": "i2v",
+      "display_name": "图生视频 (Image to Video)",
+      "json_path": "workflows/wan_i2v_api.json",
+      "model": "Wan2.1",
+      "required_inputs": [
+        "image_path",
+        "prompt"
+      ],
+      "optional_inputs": [
+        "seed"
+      ],
+      "output_dir": "media/output",
+      "output_prefix": "wan_i2v",
+      "status": "stable"
+    },
+    "flux_canny_ipa_regen": {
+      "workflow_key": "i2i_undress",
+      "display_name": "Canny+IPA全图重生成 (legacy, NOT real undress)",
+      "json_path": "workflows/flux_i2i_undress_api.json",
+      "model": "Flux Dev + XLabs IPA + ControlNet Canny",
+      "note": "Full regeneration with structure+identity reference. No mask/inpaint. Prompt-driven only.",
+      "required_inputs": [
+        "image_path",
+        "prompt"
+      ],
+      "optional_inputs": [
+        "seed",
+        "steps"
+      ],
+      "output_dir": "media/output",
+      "output_prefix": "flux_canny_ipa",
+      "status": "legacy"
+    },
+    "i2v_undress": {
+      "workflow_key": "i2v_undress",
+      "display_name": "视频换衣 (Wan2.1 i2v + undress LoRA)",
+      "json_path": "workflows/wan_i2v_undress_api.json",
+      "model": "Wan2.1 i2v 14B + woman_undressing_v1.0 LoRA @0.85",
+      "required_inputs": [
+        "image_path",
+        "prompt"
+      ],
+      "optional_inputs": [
+        "seed"
+      ],
+      "output_dir": "media/output",
+      "output_prefix": "wan_undress",
+      "status": "active"
+    },
+    "dual_transfer_pose": {
+      "workflow_key": "dual_transfer_pose",
+      "display_name": "双图迁移 — A角色 + B动作 (PuLID + DWPose)",
+      "json_path": "workflows/dual_transfer_pose_api.json",
+      "model": "Flux Dev + PuLID-Flux + Union ControlNet OpenPose",
+      "custom_nodes": [
+        "ComfyUI-PuLID-Flux",
+        "comfyui_controlnet_aux"
+      ],
+      "required_inputs": [
+        "face_image_path",
+        "body_image_path",
+        "prompt"
+      ],
+      "optional_inputs": [
+        "seed",
+        "width",
+        "height",
+        "steps",
+        "pulid_weight",
+        "cn_strength"
+      ],
+      "defaults": {
+        "steps": 28,
+        "pulid_weight": 0.9,
+        "cn_strength": 0.6
+      },
+      "output_dir": "media/output",
+      "output_prefix": "dual_transfer_pose",
+      "status": "active"
+    },
+    "i2i_style": {
+      "workflow_key": "i2i_style",
+      "display_name": "风格转换 (Style Transfer, XLabs ControlNet Canny)",
+      "json_path": "workflows/flux_i2i_style_api.json",
+      "model": "Flux Dev + XLabs ControlNet",
+      "custom_nodes": [
+        "x-flux-comfyui"
+      ],
+      "required_inputs": [
+        "image_path",
+        "prompt"
+      ],
+      "optional_inputs": [
+        "negative_prompt",
+        "seed",
+        "steps"
+      ],
+      "defaults": {
+        "steps": 25
+      },
+      "output_dir": "media/output",
+      "output_prefix": "flux_style",
+      "status": "ready"
+    }
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "_comment": "\u5de5\u4f5c\u6d414: \u98ce\u683c\u8f6c\u6362 (Flux + XLabs ControlNet Canny)",
+  "_models_needed": [
+    "unet/flux1-dev.safetensors",
+    "clip/clip_l.safetensors",
+    "clip/t5xxl_fp8_e4m3fn.safetensors",
+    "vae/ae.safetensors",
+    "xlabs/controlnets/flux-canny-controlnet-v3.safetensors  \u2190 \u9700\u4e0b\u8f7d"
+  ],
+  "_custom_nodes": [
+    "x-flux-comfyui"
+  ],
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "flux1-dev.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "DualCLIPLoader",
+    "inputs": {
+      "clip_name1": "t5xxl_fp8_e4m3fn.safetensors",
+      "clip_name2": "clip_l.safetensors",
+      "type": "flux"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "ae.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "LoadFluxControlNet",
+    "inputs": {
+      "model_name": "flux-dev",
+      "controlnet_path": "flux-canny-controlnet-v3.safetensors"
+    }
+  },
+  "5": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "IMAGE_PLACEHOLDER"
+    }
+  },
+  "6": {
+    "class_type": "Canny",
+    "inputs": {
+      "image": [
+        "5",
+        0
+      ],
+      "low_threshold": 0.1,
+      "high_threshold": 0.2
+    }
+  },
+  "7": {
+    "class_type": "CLIPTextEncodeFlux",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "clip_l": "PROMPT_PLACEHOLDER",
+      "t5xxl": "PROMPT_PLACEHOLDER",
+      "guidance": 3.5
+    }
+  },
+  "8": {
+    "class_type": "CLIPTextEncodeFlux",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "clip_l": "NEGATIVE_PROMPT_PLACEHOLDER",
+      "t5xxl": "NEGATIVE_PROMPT_PLACEHOLDER",
+      "guidance": 3.5
+    }
+  },
+  "9": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "batch_size": 1
+    }
+  },
+  "10": {
+    "class_type": "ApplyFluxControlNet",
+    "inputs": {
+      "controlnet": [
+        "4",
+        0
+      ],
+      "image": [
+        "6",
+        0
+      ],
+      "strength": 0.7
+    }
+  },
+  "11": {
+    "class_type": "XlabsSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "conditioning": [
+        "7",
+        0
+      ],
+      "neg_conditioning": [
+        "8",
+        0
+      ],
+      "noise_seed": 42,
+      "steps": 25,
+      "timestep_to_start_cfg": 1,
+      "true_gs": 3.5,
+      "image_to_image_strength": 0.0,
+      "denoise_strength": 1.0,
+      "latent_image": [
+        "9",
+        0
+      ],
+      "controlnet_condition": [
+        "10",
+        0
+      ]
+    }
+  },
+  "12": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "11",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "13": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "12",
+        0
+      ],
+      "filename_prefix": "flux_style"
+    }
+  }
+}

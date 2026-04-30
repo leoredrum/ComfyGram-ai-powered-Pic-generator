@@ -1,0 +1,120 @@
+{
+  "_comment": "换衣局部重绘 v2: Flux + SetLatentNoiseMask（已移除 XLabs IP-Adapter，mask 直接保护脸/发色区域，无需 InsightFace）",
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "flux1-dev.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "DualCLIPLoader",
+    "inputs": {
+      "clip_name1": "t5xxl_fp8_e4m3fn.safetensors",
+      "clip_name2": "clip_l.safetensors",
+      "type": "flux"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "ae.safetensors"
+    }
+  },
+  "6": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "BODY_IMAGE_PLACEHOLDER"
+    }
+  },
+  "7": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "PROMPT_PLACEHOLDER",
+      "clip": ["2", 0]
+    }
+  },
+  "8": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": ["6", 0],
+      "vae": ["3", 0]
+    }
+  },
+  "9": {
+    "class_type": "ModelSamplingFlux",
+    "inputs": {
+      "max_shift": 1.15,
+      "base_shift": 0.5,
+      "width": 1024,
+      "height": 1024,
+      "model": ["1", 0]
+    }
+  },
+  "11": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": ["9", 0],
+      "conditioning": ["7", 0]
+    }
+  },
+  "12": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 42
+    }
+  },
+  "13": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "model": ["9", 0],
+      "scheduler": "simple",
+      "steps": 25,
+      "denoise": 0.92
+    }
+  },
+  "14": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "euler"
+    }
+  },
+  "18": {
+    "class_type": "LoadImageMask",
+    "inputs": {
+      "image": "MASK_IMAGE_PLACEHOLDER",
+      "channel": "red"
+    }
+  },
+  "19": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": ["8", 0],
+      "mask": ["18", 0]
+    }
+  },
+  "15": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": ["12", 0],
+      "guider": ["11", 0],
+      "sampler": ["14", 0],
+      "sigmas": ["13", 0],
+      "latent_image": ["19", 0]
+    }
+  },
+  "16": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": ["15", 0],
+      "vae": ["3", 0]
+    }
+  },
+  "17": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": ["16", 0],
+      "filename_prefix": "flux_outfit_masked"
+    }
+  }
+}

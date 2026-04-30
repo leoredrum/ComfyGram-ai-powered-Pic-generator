@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.leo.comfyui-headless</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/leo/Documents/ComfyUI/.venv/bin/python</string>
+        <string>/Applications/ComfyUI.app/Contents/Resources/ComfyUI/main.py</string>
+        <string>--user-directory</string>
+        <string>/Users/leo/Documents/ComfyUI/user</string>
+        <string>--input-directory</string>
+        <string>/Users/leo/Documents/ComfyUI/input</string>
+        <string>--output-directory</string>
+        <string>/Users/leo/Documents/ComfyUI/output</string>
+        <string>--base-directory</string>
+        <string>/Users/leo/Documents/ComfyUI</string>
+        <string>--database-url</string>
+        <string>sqlite:////Users/leo/Documents/ComfyUI/user/comfyui.db</string>
+        <string>--extra-model-paths-config</string>
+        <string>/Users/leo/Library/Application Support/ComfyUI/extra_models_config.yaml</string>
+        <string>--log-stdout</string>
+        <string>--listen</string>
+        <string>127.0.0.1</string>
+        <string>--port</string>
+        <string>8000</string>
+        <string>--enable-manager</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Applications/ComfyUI.app/Contents/Resources/ComfyUI</string>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+    </dict>
+
+    <key>ThrottleInterval</key>
+    <integer>10</integer>
+
+    <key>StandardOutPath</key>
+    <string>/Users/leo/Documents/ComfyUI/user/comfyui-headless.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/leo/Documents/ComfyUI/user/comfyui-headless.err.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>HOME</key>
+        <string>/Users/leo</string>
+        <key>PATH</key>
+        <string>/Users/leo/Documents/ComfyUI/.venv/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>VIRTUAL_ENV</key>
+        <string>/Users/leo/Documents/ComfyUI/.venv</string>
+        <key>PYTHONIOENCODING</key>
+        <string>utf8</string>
+        <key>MallocNanoZone</key>
+        <string>0</string>
+    </dict>
+</dict>
+</plist>
