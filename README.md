@@ -1,278 +1,132 @@
-# Imagecreator + Hermes Agent 备份
+# ComfyGram
 
-这是 `imagecreator` Telegram Bot 和 `Hermes Agent` 配置的完整备份，包含所有配置、脚本和工作流。
+> Telegram Bot for ComfyUI - AI-Powered Image Generation
 
-## 项目结构
+ComfyGram is a Telegram bot that provides a convenient interface to ComfyUI, 
+enabling AI-powered image generation through Telegram messages.
 
-```
-imagecreator-backup/
-├── deploy.sh                    # 一键部署脚本
-├── scripts/
-│   └── com.leo.imagecreator-bot.plist  # macOS LaunchAgent 配置
-├── hermes-config/
-│   ├── config.yaml              # Hermes 主配置
-│   └── profiles/
-│       └── imagecreator/       # Imagecreator Hermes profile
-│           ├── config.yaml     # Profile 配置
-│           ├── .env.template   # 环境变量模板（需要填入实际值）
-│           ├── SOUL.md         # Agent 人设
-│           ├── skills/         # Agent 技能
-│           ├── platforms/      # 平台配置
-│           └── ...             # 其他配置
-└── imagecreator-workspace/
-    ├── bin/                    # Python 脚本
-    │   ├── tg_bot.py          # Telegram Bot 主程序
-    │   ├── comfyui_client.py  # ComfyUI 客户端
-    │   ├── convert_flux_lora.py  # LoRA 转换工具
-    │   ├── poll_and_send.sh   # 轮询发送脚本
-    │   ├── send_*.sh          # 发送脚本
-    │   └── ...                # 其他工具脚本
-    ├── workflows/              # ComfyUI API 工作流配置
-    │   ├── flux_*.json        # Flux 模型工作流
-    │   ├── wan_*.json         # Wan 模型工作流
-    │   └── registry.json      # 工作流注册表
-    ├── material_registry.json  # 材质注册表
-    ├── lora_registry.json      # LoRA 注册表
-    ├── *.md                    # 文档
-    └── ...                     # 其他配置文件
-```
+## ✨ Features
 
-## 快速部署
+- 🎨 **Multiple Generation Modes**: Text-to-Image, Image-to-Image, Image-to-Video
+- 🤖 **Advanced Workflows**: IP-Adapter, style transfer, outfit transfer
+- 📦 **Model Management**: Built-in LoRA and prompt library management
+- ⚡ **Asynchronous Processing**: Non-blocking image generation
+- 🔧 **Flexible Configuration**: Environment-based configuration
 
-### 前提条件
+## 🚀 Quick Start
 
-1. **Hermes Agent** 已安装并配置
-2. **ComfyUI** 已安装并运行在 `http://127.0.0.1:8000`
-3. **Python 3** 和必要的依赖已安装
+### Prerequisites
 
-### 部署步骤
+- **ComfyUI** installed and running (default: `http://127.0.0.1:8000`)
+- **Python 3.8+** with required dependencies
+- **Telegram Bot Token** from [@BotFather](https://t.me/botfather)
 
-```bash
-# 1. 克隆或解压此备份
-git clone https://github.com/yourusername/imagecreator-backup.git
-cd imagecreator-backup
+### Installation
 
-# 2. 运行部署脚本
-./deploy.sh
-```
-
-部署脚本会自动：
-- 复制 Hermes 配置到 `~/.hermes/`
-- 创建工作目录结构
-- 复制所有脚本和配置文件
-- 安装 LaunchAgent（macOS）
-
-### 手动配置
-
-部署完成后，需要手动配置：
-
-1. **编辑环境变量**
+1. **Clone the repository**
    ```bash
-   nano ~/.hermes/profiles/imagecreator/.env
+   git clone https://github.com/leoredrum/comfygram.git
+   cd comfygram
    ```
-   填入：
-   - `IMAGECREATOR_BOT_TOKEN`: Telegram Bot Token
-   - `IMAGECREATOR_SEND_TOKEN`: 辅助发送 Token
-   - `TELEGRAM_ALLOWED_USERS`: 允许的 Telegram 用户 ID
-   - `COMFYUI_BASE`: ComfyUI 地址
-   - `COMFYUI_VENV`: ComfyUI 虚拟环境路径
-   - `COMFYUI_BASE_DIR`: ComfyUI 根目录
 
-2. **检查 LaunchAgent 配置**（macOS）
+2. **Configure environment variables**
    ```bash
-   nano ~/Library/LaunchAgents/com.leo.imagecreator-bot.plist
-   ```
-   确认 Python 路径正确：
-   ```xml
-   <string>/Users/YOUR_USER/Documents/ComfyUI/.venv/bin/python3</string>
+   cp .env.example .env
+   # Edit .env and fill in your configuration
    ```
 
-3. **启动服务**
+   Required variables:
+   - `TG_BOT_TOKEN`: Your Telegram bot token
+   - `TELEGRAM_ALLOWED_USER_ID`: Your Telegram user ID
+   - `IMAGECREATOR_WORKSPACE`: Workspace directory path
+   - `COMFYUI_BASE_DIR`: ComfyUI installation path
+
+3. **Install dependencies**
    ```bash
-   # macOS
-   launchctl start com.leo.imagecreator-bot
-
-   # 或手动运行（用于调试）
-   cd ~/Agents/imagecreator-workspace
-   python3 bin/tg_bot.py
+   pip install -r requirements.txt
    ```
 
-## 目录说明
+4. **Run the bot**
+   ```bash
+   ./workspace/bot/tg_bot.py
+   ```
 
-### Hermes 配置 (`hermes-config/`)
+### macOS LaunchAgent Setup
 
-- **config.yaml**: Hermes 主配置，包含模型、终端、内存等设置
-- **profiles/imagecreator/**: Imagecreator 专用的 Hermes profile
-  - 包含 Agent 人设（SOUL.md）
-  - 技能（skills/）
-  - 平台配置（platforms/）
-  - 环境变量（.env）
-
-### 工作区 (`imagecreator-workspace/`)
-
-#### `bin/` - 核心脚本
-
-- **tg_bot.py**: Telegram Bot 主程序，处理消息和任务调度
-- **comfyui_client.py**: ComfyUI API 客户端
-- **convert_flux_lora.py**: Flux LoRA 格式转换工具
-- **poll_and_send.sh**: 轮询并发送结果的 shell 脚本
-- **send_photo.sh / send_video.sh / send_text.sh**: 发送不同类型内容的脚本
-- **update_prompts.py**: 更新提示词库
-- **rebuild_material_registry.py**: 重建材质注册表
-- **lora_scan.py**: 扫描 LoRA 文件
-- **auto_mask.py**: 自动生成掩码
-- **wd14_standalone.py**: WD14 标注工具
-
-#### `workflows/` - ComfyUI 工作流
-
-- **Flux 工作流**:
-  - `flux_t2i_api.json`: 文本生图
-  - `flux_i2i_*.json`: 各种图像到图像任务（人像、风格、调色、水印等）
-  - `flux_anime_t2i_api.json`: 动漫风格文生图
-- **Wan 工作流**:
-  - `wan_i2v.json`: 图像生视频
-  - `wan_i2v_undress_api.json`: 特殊应用
-- **Dual Transfer**:
-  - `dual_transfer_pose_api.json`: 双图迁移 - 姿态步骤
-- **registry.json**: 工作流注册表，定义可用的工作流
-
-#### 配置文件
-
-- **material_registry.json**: 材质库，包含各种标签和权重
-- **lora_registry.json**: LoRA 模型注册表
-- **preset_prompt_templates.json**: 预设提示词模板
-- **curated_prompt_banks.json**: 精选提示词库
-- **qpipi_tags.json**: Qpipi 标签字库
-- **prompt_library.json**: 提示词库
-- **user_custom_prompts.json**: 用户自定义提示词
-
-#### 文档
-
-- **AGENTS.md**: Agent 说明文档
-- **PIPELINE.md**: 处理流水线说明
-- **TOOLS.md**: 工具说明
-- **IDENTITY.md / SOUL.md / USER.md / HEARTBEAT.md**: Agent 人设相关
-- **HANDOFF-*.md**: 交接文档
-- **BOOTSTRAP.md**: 启动说明
-
-## 运行时目录（不包含在备份中）
-
-以下目录会在首次运行时自动创建：
-
-- `inbox/`: 待处理的输入文件
-- `outbox/`: 已处理的输出文件
-- `tmp/`: 临时文件和日志
-- `logs/`: 运行日志
-- `media/`: 媒体文件缓存
-
-## 运维命令
-
-### 查看日志
+For automatic startup on macOS:
 
 ```bash
-# Bot 日志
-tail -f ~/Agents/imagecreator-workspace/tmp/imagecreator-bot.log
-
-# 错误日志
-tail -f ~/Agents/imagecreator-workspace/tmp/imagecreator-bot.err.log
+./scripts/install-launchagent.sh
 ```
 
-### 服务管理
+## 📖 Configuration
 
-```bash
-# macOS LaunchAgent
-launchctl start com.leo.imagecreator-bot    # 启动
-launchctl stop com.leo.imagecreator-bot     # 停止
-launchctl unload ~/Library/LaunchAgents/com.leo.imagecreator-bot.plist  # 卸载
-launchctl load ~/Library/LaunchAgents/com.leo.imagecreator-bot.plist    # 重新加载
+### Environment Variables
+
+See [.env.example](.env.example) for all available configuration options.
+
+Key variables:
+- `TG_BOT_TOKEN`: Telegram bot authentication token
+- `TELEGRAM_ALLOWED_USER_ID`: Authorized user ID (get from [@userinfobot](https://t.me/userinfobot))
+- `IMAGECREATOR_WORKSPACE`: Path to workspace directory
+- `COMFYUI_BASE_DIR`: Path to ComfyUI installation
+- `COMFYUI_API_URL`: ComfyUI API endpoint
+
+### ComfyUI Workflows
+
+The bot includes pre-configured workflows for:
+- Text-to-Image (Flux)
+- Image-to-Image with IP-Adapter
+- Style Transfer
+- Outfit Transfer
+- Image-to-Video (Wan)
+
+Custom workflows can be added to `workspace/workflows/`.
+
+## 🏗️ Architecture
+
+ComfyGram uses an asynchronous task pipeline:
+
+1. **Task Reception**: Telegram messages → inbox/
+2. **Processing**: ComfyUI executes workflows
+3. **Polling**: Background script monitors completion
+4. **Delivery**: Results sent via Telegram
+
+See [workspace/docs/PIPELINE.md](workspace/docs/PIPELINE.md) for details.
+
+## 📁 Project Structure
+
+```
+comfygram/
+├── README.md              # This file
+├── .env.example           # Configuration template
+├── deploy.sh              # Deployment script
+├── workspace/             # Main workspace
+│   ├── bot/              # Bot Python scripts
+│   ├── workflows/        # ComfyUI workflow JSONs
+│   ├── configs/          # Configuration files
+│   ├── docs/             # Documentation
+│   ├── inbox/            # Input task queue
+│   ├── outbox/           # Generated images
+│   └── tmp/              # Temporary files
+├── config/               # System configuration
+│   └── *.plist.template  # macOS LaunchAgent templates
+└── scripts/              # Utility scripts
 ```
 
-### 手动测试
+## 🤝 Contributing
 
-```bash
-# 直接运行 Bot（调试模式）
-cd ~/Agents/imagecreator-workspace
-python3 bin/tg_bot.py
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-# 测试发送脚本
-./bin/send_text.sh "Hello World"
-./bin/send_photo.sh /path/to/image.jpg
-```
+## 📄 License
 
-## 技术栈
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- **Hermes Agent**: AI Agent 框架
-- **Python 3**: 主要编程语言
-- **ComfyUI**: 图像生成和视频生成后端
-- **Telegram Bot API**: 消息接收和发送
-- **Flux / Wan**: AI 模型（通过 ComfyUI）
-- **macOS LaunchAgent**: 服务守护进程
+## 🙏 Acknowledgments
 
-## 注意事项
+- [ComfyUI](https://github.com/comfyanonymous/ComfyUI) - Powerful UI for Stable Diffusion
+- [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) - Telegram Bot API wrapper
 
-1. **敏感信息**: `.env` 文件包含 API Token，已替换为 `.env.template`，部署后需要填入实际值
-2. **路径依赖**: 部署脚本会替换路径中的 `/Users/leo` 为当前用户，但 Python 路径需要手动确认
-3. **ComfyUI 依赖**: 确保 ComfyUI 已安装并正常运行
-4. **权限**: 部署后可能需要设置脚本可执行权限：`chmod +x ~/Agents/imagecreator-workspace/bin/*.sh`
+## 📮 Support
 
-## 备份说明
-
-此备份包含：
-- ✅ 所有配置文件
-- ✅ 所有脚本代码
-- ✅ 所有工作流定义
-- ✅ 所有注册表和库文件
-- ✅ 文档和说明
-
-不包含（会在运行时自动生成）：
-- ❌ 运行时数据
-- ❌ 日志文件
-- ❌ 临时文件
-- ❌ 缓存文件
-- ❌ Session 数据
-- ❌ API Token（需要手动配置）
-
-## 故障排查
-
-### Bot 无法启动
-
-```bash
-# 检查 ComfyUI 是否运行
-curl http://127.0.0.1:8000/system_stats
-
-# 检查 Python 环境
-which python3
-python3 --version
-
-# 手动运行查看错误
-cd ~/Agents/imagecreator-workspace
-python3 bin/tg_bot.py
-```
-
-### LaunchAgent 问题
-
-```bash
-# 查看服务状态
-launchctl list | grep imagecreator
-
-# 查看服务日志
-log show --predicate 'process == "imagecreator-bot"' --last 1h
-```
-
-### 权限问题
-
-```bash
-# 确保脚本可执行
-chmod +x ~/Agents/imagecreator-workspace/bin/*.sh
-
-# 确保目录可写
-chmod -R 755 ~/Agents/imagecreator-workspace
-```
-
-## License
-
-MIT
-
-## 联系方式
-
-如有问题，请联系 leoredrum
+For issues and questions, please use [GitHub Issues](https://github.com/leoredrum/comfygram/issues).

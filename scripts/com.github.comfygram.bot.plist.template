@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.github.comfygram.bot</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/path/to/python3</string>
+    <string>/path/to/workspace/bot/tg_bot.py</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/path/to/workspace</string>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>KeepAlive</key>
+  <true/>
+
+  <key>ThrottleInterval</key>
+  <integer>10</integer>
+
+  <key>StandardOutPath</key>
+  <string>/path/to/workspace/tmp/comfygram-bot.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/path/to/workspace/tmp/comfygram-bot.err.log</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>HOME</key>
+    <string>/Users/YOUR_USERNAME</string>
+    <key>PATH</key>
+    <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+</dict>
+</plist>

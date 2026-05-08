@@ -1,47 +1,43 @@
-# 敏感配置
-*.env
-.env.local
-.env.*.local
-auth.json
-auth.lock
-
-# 运行时数据
-sessions/
-logs/
-cache/
-tmp/
-inbox/
-outbox/
-models_dev_cache.json
-state.db*
-gateway.*
-channel_directory.json
-gateway_state.json
-gateway.pid
-
-# Python
+# ComfyGram - Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+.venv
 venv/
-env/
 ENV/
 
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
+# Workspace data
+workspace/inbox/
+workspace/outbox/
+workspace/tmp/*.log
+workspace/tmp/*.pid
 
-# IDE
+# ComfyUI outputs (keep structure, ignore content)
+workspace/outbox/*
+
+# Config overrides
+workspace/configs/*_overrides.json
+
+# Personal
+.DS_Store
 .vscode/
 .idea/
-*.swp
-*.swo
-*~
 
-# 备份文件
-*.bak
-*.backup
+# Backups
 .bak-*/
+*.bak
+
+# Logs
+*.log
+logs/
+
+# ComfyGram specific
+.workspace-state.json

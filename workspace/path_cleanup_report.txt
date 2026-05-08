@@ -1,0 +1,207 @@
+# 路径配置化报告
+
+## 发现的硬编码路径
+
+### 修改前统计
+- bin/tg_bot.py: 5 处硬编码路径
+- bin/comfyui_client.py: 9 处硬编码路径
+- bin/convert_flux_lora.py: 1 处硬编码路径
+- bin/wd14_standalone.py: 2 处硬编码路径
+- bin/lora_scan.py: 3 处硬编码路径
+- bin/rebuild_material_registry.py: 4 处硬编码路径
+- bin/upgrade_to_ipadapter.py: 2 处硬编码路径
+- bin/poll_and_send.sh: 1 处硬编码路径
+
+## 修改详情
+
+### 1. bin/tg_bot.py
+**修改前:**
+```python
+WORKSPACE          = Path("/Users/leo/Agents/imagecreator-workspace")
+COMFYUI_INPUT      = Path("/Users/leo/Documents/ComfyUI/input")
+COMFYUI_OUTPUT     = Path("/Users/leo/Documents/ComfyUI/output")
+OUTPUT_ARCHIVE     = Path("/Users/leo/Documents/ComfyUI_output_archive")
+```
+
+**修改后:**
+```python
+WORKSPACE          = Path(os.environ.get("IMAGECREATOR_WORKSPACE", "/Users/leo/Agents/imagecreator-workspace"))
+COMFYUI_BASE       = Path(os.environ.get("COMFYUI_BASE_DIR", "/Users/leo/Documents/ComfyUI"))
+COMFYUI_INPUT      = COMFYUI_BASE / "input"
+COMFYUI_OUTPUT     = COMFYUI_BASE / "output"
+OUTPUT_ARCHIVE     = Path(os.environ.get("COMFYUI_OUTPUT_ARCHIVE", "/Users/leo/Documents/ComfyUI_output_archive"))
+```
+
+### 2. bin/comfyui_client.py
+**修改前:**
+```python
+MATERIAL_REGISTRY_FILE = Path("/Users/leo/Agents/imagecreator-workspace/material_registry.json")
+WORKFLOWS_DIR = Path("/Users/leo/Agents/imagecreator-workspace/workflows")
+OUTBOX_DIR   = Path("/Users/leo/Agents/imagecreator-workspace/outbox")
+OUTPUT_DIR   = Path("/Users/leo/Agents/imagecreator-workspace/media/output")
+INPUT_DIR    = Path("/Users/leo/Agents/imagecreator-workspace/media/input")
+COMFYUI_INPUT = Path("/Users/leo/Documents/ComfyUI/input")
+COMFYUI_OUTPUT = Path("/Users/leo/Documents/ComfyUI/output")
+```
+
+**修改后:**
+```python
+WORKSPACE = Path(os.environ.get("IMAGECREATOR_WORKSPACE", "/Users/leo/Agents/imagecreator-workspace"))
+COMFYUI_BASE = Path(os.environ.get("COMFYUI_BASE_DIR", "/Users/leo/Documents/ComfyUI"))
+MATERIAL_REGISTRY_FILE = WORKSPACE / "material_registry.json"
+WORKFLOWS_DIR = WORKSPACE / "workflows"
+OUTBOX_DIR   = WORKSPACE / "outbox"
+OUTPUT_DIR   = WORKSPACE / "media" / "output"
+INPUT_DIR    = WORKSPACE / "media" / "input"
+COMFYUI_INPUT = COMFYUI_BASE / "input"
+COMFYUI_OUTPUT = COMFYUI_BASE / "output"
+```
+
+**额外修改 (collect_outputs函数):**
+```python
+# 修改前
+if ftype == "temp":
+    root = Path("/Users/leo/Documents/ComfyUI/temp")
+elif ftype == "input":
+    root = Path("/Users/leo/Documents/ComfyUI/input")
+
+# 修改后
+if ftype == "temp":
+    root = COMFYUI_BASE / "temp"
+elif ftype == "input":
+    root = COMFYUI_INPUT
+```
+
+### 3. bin/lora_scan.py
+**修改前:**
+```python
+LORA_ROOT = Path("/Users/leo/Downloads/lora")
+REGISTRY_FILE = Path("/Users/leo/Agents/imagecreator-workspace/lora_registry.json")
+```
+
+**修改后:**
+```python
+WORKSPACE = Path(os.environ.get("IMAGECREATOR_WORKSPACE", "/Users/leo/Agents/imagecreator-workspace"))
+LORA_ROOT = Path(os.environ.get("LORA_ROOT_DIR", "/Users/leo/Downloads/lora"))
+REGISTRY_FILE = WORKSPACE / "lora_registry.json"
+```
+
+### 4. bin/rebuild_material_registry.py
+**修改前:**
+```python
+MATERIAL_ROOT = Path("/Users/leo/Documents/material")
+REGISTRY_PATH = Path("/Users/leo/Agents/imagecreator-workspace/material_registry.json")
+OVERRIDES_PATH = Path("/Users/leo/Agents/imagecreator-workspace/material_registry_overrides.json")
+```
+
+**修改后:**
+```python
+WORKSPACE = Path(os.environ.get("IMAGECREATOR_WORKSPACE", "/Users/leo/Agents/imagecreator-workspace"))
+MATERIAL_ROOT = Path(os.environ.get("MATERIAL_ROOT_DIR", "/Users/leo/Documents/material"))
+REGISTRY_PATH = WORKSPACE / "material_registry.json"
+OVERRIDES_PATH = WORKSPACE / "material_registry_overrides.json"
+```
+
+### 5. bin/upgrade_to_ipadapter.py
+**修改前:**
+```python
+CLIP_MODEL = Path("/Users/leo/Documents/ComfyUI/models/clip_vision/clip_vit_h14_laion2b.safetensors")
+WORKFLOW   = Path("/Users/leo/Agents/imagecreator-workspace/workflows/flux_i2i_undress_api.json")
+```
+
+**修改后:**
+```python
+WORKSPACE = Path(os.environ.get("IMAGECREATOR_WORKSPACE", "/Users/leo/Agents/imagecreator-workspace"))
+COMFYUI_BASE = Path(os.environ.get("COMFYUI_BASE_DIR", "/Users/leo/Documents/ComfyUI"))
+CLIP_MODEL = COMFYUI_BASE / "models/clip_vision/clip_vit_h14_laion2b.safetensors"
+WORKFLOW   = WORKSPACE / "workflows/flux_i2i_undress_api.json"
+```
+
+### 6. bin/convert_flux_lora.py
+**修改前:**
+```python
+venv_py = "/Users/leo/Documents/ComfyUI/.venv/bin/python3"
+```
+
+**修改后:**
+```python
+import os
+comfyui_base = os.environ.get("COMFYUI_BASE_DIR", "/Users/leo/Documents/ComfyUI")
+venv_py = f"{comfyui_base}/.venv/bin/python3"
+```
+
+### 7. bin/wd14_standalone.py
+**修改前:**
+```python
+MODELS_DIR = Path("/Users/leo/Documents/ComfyUI/custom_nodes/ComfyUI-WD14-Tagger/models")
+```
+
+**修改后:**
+```python
+COMFYUI_BASE = Path(os.environ.get("COMFYUI_BASE_DIR", "/Users/leo/Documents/ComfyUI"))
+MODELS_DIR = COMFYUI_BASE / "custom_nodes/ComfyUI-WD14-Tagger/models"
+```
+
+### 8. bin/poll_and_send.sh
+**修改前:**
+```bash
+WORKSPACE="/Users/leo/Agents/imagecreator-workspace"
+```
+
+**修改后:**
+```bash
+WORKSPACE="${IMAGECREATOR_WORKSPACE:-/Users/leo/Agents/imagecreator-workspace}"
+```
+
+## 映射关系
+
+| 环境变量 | 用途 | 默认值 |
+|---------|------|--------|
+| `IMAGECREATOR_WORKSPACE` | 工作区目录 | `/Users/leo/Agents/imagecreator-workspace` |
+| `COMFYUI_BASE_DIR` | ComfyUI 基础目录 | `/Users/leo/Documents/ComfyUI` |
+| `COMFYUI_INPUT` | ComfyUI 输入目录 | `$COMFYUI_BASE_DIR/input` |
+| `COMFYUI_OUTPUT` | ComfyUI 输出目录 | `$COMFYUI_BASE_DIR/output` |
+| `COMFYUI_OUTPUT_ARCHIVE` | ComfyUI 输出归档 | `/Users/leo/Documents/ComfyUI_output_archive` |
+| `LORA_ROOT_DIR` | LoRA 根目录 | `/Users/leo/Downloads/lora` |
+| `MATERIAL_ROOT_DIR` | 材质根目录 | `/Users/leo/Documents/material` |
+
+## 使用示例
+
+### 设置环境变量
+```bash
+# Bash/Zsh
+export IMAGECREATOR_WORKSPACE="/path/to/workspace"
+export COMFYUI_BASE_DIR="/path/to/comfyui"
+export LORA_ROOT_DIR="/path/to/lora"
+export MATERIAL_ROOT_DIR="/path/to/material"
+
+# 或在运行时设置
+IMAGECREATOR_WORKSPACE="/new/path" python3 bin/tg_bot.py
+COMFYUI_BASE_DIR="/opt/comfyui" python3 bin/comfyui_client.py --task task.json
+```
+
+### Docker/Compose 配置
+```yaml
+services:
+  imagecreator:
+    environment:
+      - IMAGECREATOR_WORKSPACE=/workspace
+      - COMFYUI_BASE_DIR=/comfyui
+      - LORA_ROOT_DIR=/data/lora
+      - MATERIAL_ROOT_DIR=/data/material
+```
+
+## 验证结果
+
+✅ 所有 Python 文件中的硬编码路径已替换为环境变量
+✅ Shell 脚本中的硬编码路径已替换为环境变量
+✅ 保留了合理的默认值，向后兼容
+✅ 剩余的 `/Users/leo` 路径仅在注释/文档字符串中，不影响运行
+
+## 优势
+
+1. **可移植性**: 代码可在不同环境运行，无需修改路径
+2. **部署友好**: 支持容器化部署和云环境
+3. **多用户支持**: 不同用户可使用不同的路径配置
+4. **测试便利**: 测试环境可使用临时目录
+5. **向后兼容**: 未设置环境变量时使用原有默认路径
